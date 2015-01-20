@@ -24,6 +24,34 @@ a {
 .winter-page {
   background-image: url('../assets/tiles/body_wallpaper_snow.jpg'); }
 
+.left-side, .right-side {
+  display: inline-block;
+  margin: 0 1%;
+  padding: 20px 0;
+  width: 47%; }
+
+.left-side {
+  text-align: right; }
+
+.right-side {
+  text-align: left; }
+
+.main-header {
+  color: #fcb034;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 70px;
+  margin-bottom: 60px;
+  text-shadow: 5px 5px 5px #000;
+  text-transform: uppercase; }
+  .main-header span {
+    color: #fff;
+    display: block;
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: 100;
+    line-height: 0;
+    text-transform: lowercase; }
+
 .season-icons-list li {
   display: inline-block;
   padding: 10px; }
@@ -129,3 +157,14 @@ footer {
   .sponsor-links img {
     margin: 10px;
     max-width: 80px; }
+
+.blue-box {
+  background-image: url('../assets/tiles/blue-box.jpg');
+  display: block;
+  margin-left: 50%;
+  margin-top: 20px;
+  padding: 20px; }
+  .blue-box p {
+    color: #fff; }
+  .blue-box p:first-child {
+    margin-bottom: 10px; }

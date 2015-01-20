@@ -1,0 +1,15 @@
+.left-side,
+.right-side {
+  display: inline-block;
+  margin: 0 1%;
+  padding: 20px 0;
+  width: 47%;
+}
+
+.left-side {
+  text-align: right;
+}
+
+.right-side {
+  text-align: left;
+}

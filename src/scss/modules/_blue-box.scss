@@ -1,0 +1,15 @@
+.blue-box {
+  background-image: url('../assets/tiles/blue-box.jpg');
+  display: block;
+  margin-left: 50%;
+  margin-top: 20px;
+  padding: 20px;
+
+  p {
+    color: #fff;
+  }
+
+  p:first-child {
+    margin-bottom: 10px;
+  }
+}
