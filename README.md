@@ -5,12 +5,11 @@ You can see the progress here: [LINK](http://thewickedwebdev.github.io/acidotic-
 Static HTML
 
 #### Dependancies
-```sudo npm install```
-
-```gem install scss-lint```
+```sudo npm install
+```gem install scss-lint
 
 #### Watch mode lints and compiles sass on fly
-```gulp```
+```gulp
 
 ####About
 
