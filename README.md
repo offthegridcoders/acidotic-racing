@@ -4,7 +4,9 @@ You can see the progress here: [LINK](http://thewickedwebdev.github.io/acidotic-
 
 Static HTML
 
+#### Dependancies
 ```sudo npm install```
+
 ```gem install scss-lint```
 
 ####About
