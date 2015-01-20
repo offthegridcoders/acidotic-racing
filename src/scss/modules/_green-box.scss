@@ -1,0 +1,28 @@
+.left-side {
+  .green-box {
+    margin-left: 40%;
+  }
+}
+
+.right-side {
+  .green-box {
+    margin-right: 40%;
+  }
+}
+
+.green-box {
+  background-image: url('../assets/tiles/green-box.jpg');
+  box-shadow: 3px 3px 20px #000;
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 35px;
+
+  p {
+    color: #fff;
+  }
+
+  p:first-child {
+    margin-bottom: 10px;
+  }
+}

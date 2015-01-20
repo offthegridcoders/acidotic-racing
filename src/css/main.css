@@ -32,6 +32,15 @@ a {
 .winter-page {
   background-image: url('../assets/tiles/body_wallpaper_snow.jpg'); }
 
+.spring-page {
+  background-image: url('../assets/tiles/body_wallpaper_stream.jpg'); }
+
+.summer-page {
+  background-image: url('../assets/tiles/body_wallpaper_sand.jpg'); }
+
+.fall-page {
+  background-image: url('../assets/tiles/body_wallpaper.jpg'); }
+
 .left-side, .right-side {
   display: inline-block;
   margin: 0 1%;
@@ -112,6 +121,15 @@ header {
 
 .winter-header {
   background-image: url('../assets/headers/winter-header.png'); }
+
+.spring-header {
+  background-image: url('../assets/headers/spring-header.png'); }
+
+.summer-header {
+  background-image: url('../assets/headers/summer-header.png'); }
+
+.fall-header {
+  background-image: url('../assets/headers/fall-header.png'); }
 
 footer {
   width: 100%; }
@@ -197,6 +215,24 @@ footer {
   .blue-box p:first-child {
     margin-bottom: 10px; }
 
+.left-side .green-box {
+  margin-left: 40%; }
+
+.right-side .green-box {
+  margin-right: 40%; }
+
+.green-box {
+  background-image: url('../assets/tiles/green-box.jpg');
+  box-shadow: 3px 3px 20px #000;
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 35px; }
+  .green-box p {
+    color: #fff; }
+  .green-box p:first-child {
+    margin-bottom: 10px; }
+
 .left-side .event-block {
   float: right; }
 
@@ -280,14 +316,26 @@ footer {
     margin-bottom: 50px;
     margin-top: 50px; }
 
-.values-block {
+.winter-page .values-block, .fall-page .values-block {
   margin: 60px 0; }
-  .values-block p {
+  .winter-page .values-block p, .fall-page .values-block p {
     color: #92a8f5;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 50px;
     font-weight: 600;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-transform: uppercase; }
-  .values-block p:nth-child(odd) {
+  .winter-page .values-block p:nth-child(odd), .fall-page .values-block p:nth-child(odd) {
     color: #c9d5eb; }
+
+.summer-page .values-block, .spring-page .values-block {
+  margin: 60px 0; }
+  .summer-page .values-block p, .spring-page .values-block p {
+    color: #b2d79f;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-transform: uppercase; }
+  .summer-page .values-block p:nth-child(odd), .spring-page .values-block p:nth-child(odd) {
+    color: #caef58; }
