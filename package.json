@@ -1,7 +1,9 @@
 {
   "devDependencies": {
     "gulp": "*",
+    "gulp-minify-css": "^0.3.13",
     "gulp-sass": "*",
-    "gulp-scss-lint": "*"
+    "gulp-scss-lint": "*",
+    "gulp-uglify": "^1.1.0"
   }
 }

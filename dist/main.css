@@ -1,0 +1,69 @@
+*{box-sizing:border-box}
+body,html{font-family:Lato,sans-serif;margin:0;padding:0;width:100%}
+form,h1,h2,h3,h4,h5,h6,li,p,ul{margin:0;padding:0}
+ul{list-style:none}
+p span{color:#000}
+a{color:#000;text-decoration:none}
+.clearfix:after{clear:both;content:' ';display:block;font-size:0;height:0;visibility:hidden}
+.winter-page{background-image:url(../assets/tiles/body_wallpaper_snow.jpg)}
+.left-side,.right-side{display:inline-block;margin:0 1%;padding:20px 0;vertical-align:top;width:47%}
+.left-side{text-align:right}
+.right-side{padding-top:20px;text-align:left}
+article{margin:20px 0}
+.main-header{color:#fcb034;font-family:Tahoma,Geneva,sans-serif;font-size:70px;margin-bottom:60px;text-shadow:5px 5px 5px #000;text-transform:uppercase}
+.main-header span{color:#fff;display:block;font-family:'Great Vibes',cursive;font-size:70px;font-weight:100;line-height:0;text-transform:lowercase}
+.season-icons-list li{display:inline-block;padding:10px}
+.season-icons-list img{cursor:pointer;opacity:.9;width:70px}
+nav{background:rgba(0,0,0,.1);font-family:Lato,sans-serif;height:70px;left:0;position:absolute;top:0;width:100%}
+nav ul{margin:10px auto 0;max-width:100%;text-align:center}
+nav li{border-right:solid 1px #fff;display:inline-block;padding:15px 30px;text-transform:uppercase}
+nav li:last-child{border:0}
+nav a{color:#fff;font-size:15px}
+nav a:hover{color:#fcb034}
+nav span{text-transform:lowercase}
+header{background-position:50%;background-repeat:no-repeat;background-size:cover;height:550px;padding-top:120px;text-align:center}
+header img{margin-bottom:25px}
+.winter-header{background-image:url(../assets/headers/winter-header.png)}
+footer{width:100%}
+.social-footer-links{background:#fff;padding:20px;text-align:center;width:100%}
+.social-footer-links li{display:inline-block}
+.social-footer-links img{margin:5px;width:40px}
+.event-links{background-image:url(../assets/tiles/black-screen.png);border:5px groove #fcb034;border-left:0;border-right:0;padding:20px;text-align:center;width:100%}
+.event-links span{color:#999;font-size:12px}
+.event-links a{color:#fff;font-size:16px}
+.event-links ul{display:inline-block;text-align:left;width:230px}
+.event-links li{display:block;margin:8px 5px;padding:5px}
+.event-links li:hover{background-color:#000}
+.event-links li:hover a{color:#fcb034}
+.event-links li:first-child{color:#fcb034;font-size:20px;margin-bottom:15px;text-transform:uppercase}
+.sponsor-links{background:#fff;padding:20px;text-align:center;width:100%}
+.sponsor-links h3{color:#fcb034;font-size:20px;margin:10px auto 20px;text-transform:uppercase}
+.sponsor-links li{display:inline-block;vertical-align:middle}
+.sponsor-links img{margin:10px;max-width:80px}
+.left-side .blue-box{margin-left:40%}
+.right-side .blue-box{margin-right:40%}
+.blue-box{background-image:url(../assets/tiles/blue-box.jpg);box-shadow:3px 3px 20px #000;display:block;font-size:20px;margin-top:20px;padding:35px}
+.blue-box p{color:#fff}
+.blue-box p:first-child{margin-bottom:10px}
+.left-side .event-block{float:right}
+.right-side .event-block{left:0}
+.event-block{background-repeat:no-repeat;background-size:cover;box-shadow:3px 3px 20px #000;height:400px;position:relative;width:450px}
+.event-block img{left:0;margin:5px;max-height:100px;max-width:180px;position:absolute;top:0}
+.event-block:hover .event-info{display:block}
+.event-info{background:url(../assets/tiles/black-screen.png);color:#fff;display:none;height:100%;left:0;padding:30px 10px 10px;position:absolute;text-align:center;top:0;width:100%}
+.event-info h2{color:#fcb034;font-size:20px;margin-bottom:50px}
+.event-info h3,.event-info h4{font-weight:200}
+.event-info h3{margin-bottom:10px}
+.event-info h4{margin-bottom:30px}
+.event-info button{background:0 0;border:1px dashed #fcb034;color:#fcb034;cursor:pointer;padding:10px 20px;text-transform:uppercase}
+.event-info h5{bottom:10px;font-style:italic;opacity:.6;position:absolute;text-align:center;width:100%}
+.sidehiller-event{background-image:url(../assets/events/event_sidehiller.jpg)}
+.kingman-moonlight{background-image:url(../assets/events/event_kingman-moonlight.jpg)}
+.snowshoe-hullaballo{background-image:url(../assets/events/event_hullaballo.jpg)}
+.granite-state-snowshoe{background-image:url(../assets/events/event_granitestate.jpg);margin-top:40px}
+.suunto{background-image:url(../assets/events/suunto.jpg)}
+.suunto .event-info{padding:30px}
+.suunto h2{font-size:30px;margin-bottom:50px;margin-top:50px}
+.values-block{margin:60px 0}
+.values-block p{color:#92a8f5;font-family:Tahoma,Geneva,sans-serif;font-size:50px;font-weight:600;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;text-transform:uppercase}
+.values-block p:nth-child(odd){color:#c9d5eb}
