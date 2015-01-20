@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+ul, li, p, h1, h2, h3, h4, h5, h6, form {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+p span {
+  color: #000; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+.season-icons-list li {
+  padding: 10px; }
+.season-icons-list img {
+  opacity: .9; }

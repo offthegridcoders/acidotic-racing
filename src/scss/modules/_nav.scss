@@ -1,0 +1,36 @@
+nav {
+  font-family: 'Lato', sans-serif;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  ul {
+    margin: 10px auto 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  li {
+    border-right: solid 1px #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  span {
+    text-transform: lowercase;
+  }
+}
