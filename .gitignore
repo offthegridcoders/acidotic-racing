@@ -1,12 +1,9 @@
-# Logs
-logs
-*.log
-
 # DS_Store
+**/.DS_Store
 .DS_Store
 
 
 # css and sass cache
 **/.sass-cache
 
-#node-modules
+node-modules
