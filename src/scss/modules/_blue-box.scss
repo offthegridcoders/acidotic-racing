@@ -1,7 +1,19 @@
+.left-side {
+  .blue-box {
+    margin-left: 50%;
+  }
+}
+
+.right-side {
+  .blue-box {
+    margin-right: 50%;
+  }
+}
+
 .blue-box {
   background-image: url('../assets/tiles/blue-box.jpg');
+  box-shadow: 3px 3px 20px #000;
   display: block;
-  margin-left: 50%;
   margin-top: 20px;
   padding: 20px;
 

@@ -28,13 +28,18 @@ a {
   display: inline-block;
   margin: 0 1%;
   padding: 20px 0;
+  vertical-align: top;
   width: 47%; }
 
 .left-side {
   text-align: right; }
 
 .right-side {
+  padding-top: 20px;
   text-align: left; }
+
+article {
+  margin: 20px 0; }
 
 .main-header {
   color: #fcb034;
@@ -122,24 +127,29 @@ footer {
   padding: 20px;
   text-align: center;
   width: 100%; }
+  .event-links span {
+    color: #999;
+    font-size: 12px; }
+  .event-links a {
+    color: #fff;
+    font-size: 16px; }
   .event-links ul {
     display: inline-block;
     text-align: left;
     width: 230px; }
   .event-links li {
     display: block;
-    width: 300px; }
+    margin: 8px 5px;
+    padding: 5px; }
+  .event-links li:hover {
+    background-color: #000; }
+    .event-links li:hover a {
+      color: #fcb034; }
   .event-links li:first-child {
     color: #fcb034;
     font-size: 20px;
     margin-bottom: 15px;
     text-transform: uppercase; }
-  .event-links span {
-    color: #ccc;
-    font-size: 12px; }
-  .event-links a {
-    color: #fff;
-    font-size: 16px; }
 
 .sponsor-links {
   background: #fff;
@@ -158,13 +168,91 @@ footer {
     margin: 10px;
     max-width: 80px; }
 
+.left-side .blue-box {
+  margin-left: 50%; }
+
+.right-side .blue-box {
+  margin-right: 50%; }
+
 .blue-box {
   background-image: url('../assets/tiles/blue-box.jpg');
+  box-shadow: 3px 3px 20px #000;
   display: block;
-  margin-left: 50%;
   margin-top: 20px;
   padding: 20px; }
   .blue-box p {
     color: #fff; }
   .blue-box p:first-child {
     margin-bottom: 10px; }
+
+.left-side .event-block {
+  float: right; }
+
+.right-side .event-block {
+  left: 0; }
+
+.event-block {
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 3px 3px 20px #000;
+  height: 350px;
+  position: relative;
+  width: 400px; }
+  .event-block img {
+    left: 0;
+    margin: 5px;
+    max-width: 90px;
+    position: absolute;
+    top: 0; }
+  .event-block:hover .event-info {
+    display: block; }
+
+.event-info {
+  background: url('../assets/tiles/black-screen.png');
+  color: #fff;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: .9;
+  padding: 30px 10px 10px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%; }
+  .event-info h2 {
+    color: #fcb034;
+    font-size: 20px;
+    margin-bottom: 40px; }
+  .event-info h3, .event-info h4 {
+    font-weight: 200; }
+  .event-info h3 {
+    margin-bottom: 10px; }
+  .event-info h4 {
+    margin-bottom: 30px; }
+  .event-info button {
+    background: transparent;
+    border: dashed 1px #fcb034;
+    color: #fcb034;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase; }
+  .event-info h5 {
+    bottom: 10px;
+    font-style: italic;
+    opacity: .6;
+    position: absolute;
+    text-align: center;
+    width: 100%; }
+
+.sidehiller-event {
+  background-image: url('../assets/events/event_sidehiller.jpg'); }
+
+.values-block p {
+  color: #92a8f5;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-transform: uppercase; }
+.values-block p:nth-child(odd) {
+  color: #c9d5eb; }

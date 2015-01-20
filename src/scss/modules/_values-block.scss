@@ -1,0 +1,14 @@
+.values-block {
+  p {
+    color: $blue;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-transform: uppercase;
+  }
+
+  p:nth-child(odd) {
+    color: $light-blue;
+  }
+}

@@ -7,6 +7,16 @@
   text-align: center;
   width: 100%;
 
+  span {
+    color: #999;
+    font-size: 12px;
+  }
+
+  a {
+    color: #fff;
+    font-size: 16px;
+  }
+
   ul {
     display: inline-block;
     text-align: left;
@@ -15,7 +25,16 @@
 
   li {
     display: block;
-    width: 300px;
+    margin: 8px 5px;
+    padding: 5px;
+  }
+
+  li:hover {
+    background-color: #000;
+
+    a {
+      color: $orange;
+    }
   }
 
   li:first-child {
@@ -23,15 +42,5 @@
     font-size: 20px;
     margin-bottom: 15px;
     text-transform: uppercase;
-  }
-
-  span {
-    color: $gray;
-    font-size: 12px;
-  }
-
-  a {
-    color: #fff;
-    font-size: 16px;
   }
 }

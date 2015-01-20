@@ -3,6 +3,7 @@
   display: inline-block;
   margin: 0 1%;
   padding: 20px 0;
+  vertical-align: top;
   width: 47%;
 }
 
@@ -11,5 +12,10 @@
 }
 
 .right-side {
+  padding-top: 20px;
   text-align: left;
+}
+
+article {
+  margin: 20px 0;
 }
