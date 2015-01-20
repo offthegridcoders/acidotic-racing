@@ -29,7 +29,8 @@
 
   &:hover {
     .event-info {
-      display: block;
+      opacity: 1;
+      transition: opacity .4s ease;
     }
   }
 }
@@ -37,13 +38,14 @@
 .event-info {
   background: url('../assets/tiles/black-screen.png');
   color: #fff;
-  display: none;
   height: 100%;
   left: 0;
+  opacity: 0;
   padding: 30px 10px 10px;
   position: absolute;
   text-align: center;
   top: 0;
+  transition: opacity .2s ease;
   width: 100%;
 
   h2 {

@@ -24,13 +24,16 @@
   }
 
   li {
+    background-color: transparent;
     display: block;
     margin: 8px 5px;
     padding: 5px;
+    transition: background-color .3s ease;
   }
 
   li:hover {
     background-color: #000;
+    transition: background-color .3s ease;
 
     a {
       color: $orange;

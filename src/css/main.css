@@ -146,11 +146,14 @@ footer {
     text-align: left;
     width: 230px; }
   .event-links li {
+    background-color: transparent;
     display: block;
     margin: 8px 5px;
-    padding: 5px; }
+    padding: 5px;
+    transition: background-color .3s ease; }
   .event-links li:hover {
-    background-color: #000; }
+    background-color: #000;
+    transition: background-color .3s ease; }
     .event-links li:hover a {
       color: #fcb034; }
   .event-links li:first-child {
@@ -215,18 +218,20 @@ footer {
     position: absolute;
     top: 0; }
   .event-block:hover .event-info {
-    display: block; }
+    opacity: 1;
+    transition: opacity .4s ease; }
 
 .event-info {
   background: url('../assets/tiles/black-screen.png');
   color: #fff;
-  display: none;
   height: 100%;
   left: 0;
+  opacity: 0;
   padding: 30px 10px 10px;
   position: absolute;
   text-align: center;
   top: 0;
+  transition: opacity .2s ease;
   width: 100%; }
   .event-info h2 {
     color: #fcb034;
