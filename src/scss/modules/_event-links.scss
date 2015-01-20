@@ -1,0 +1,37 @@
+.event-links {
+  background-image: url('../assets/tiles/black-screen.png');
+  border: 5px groove $orange;
+  border-left: 0;
+  border-right: 0;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+
+  ul {
+    display: inline-block;
+    text-align: left;
+    width: 230px;
+  }
+
+  li {
+    display: block;
+    width: 300px;
+  }
+
+  li:first-child {
+    color: $orange;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  span {
+    color: $gray;
+    font-size: 12px;
+  }
+
+  a {
+    color: #fff;
+    font-size: 16px;
+  }
+}

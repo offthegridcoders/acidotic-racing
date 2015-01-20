@@ -67,3 +67,33 @@ header {
 
 .winter-header {
   background-image: url('../assets/headers/winter-header.png'); }
+
+footer {
+  width: 100%; }
+
+.event-links {
+  background-image: url('../assets/tiles/black-screen.png');
+  border: 5px groove #fcb034;
+  border-left: 0;
+  border-right: 0;
+  padding: 20px;
+  text-align: center;
+  width: 100%; }
+  .event-links ul {
+    display: inline-block;
+    text-align: left;
+    width: 230px; }
+  .event-links li {
+    display: block;
+    width: 300px; }
+  .event-links li:first-child {
+    color: #fcb034;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  .event-links span {
+    color: #ccc;
+    font-size: 12px; }
+  .event-links a {
+    color: #fff;
+    font-size: 16px; }
