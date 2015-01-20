@@ -1,5 +1,7 @@
 nav {
+  background: rgba(0, 0, 0, .1);
   font-family: 'Lato', sans-serif;
+  height: 70px;
   left: 0;
   position: absolute;
   top: 0;
@@ -24,6 +26,7 @@ nav {
 
   a {
     color: #fff;
+    font-size: 15px;
 
     &:hover {
       color: $orange;

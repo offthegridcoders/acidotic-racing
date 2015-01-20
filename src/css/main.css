@@ -28,11 +28,14 @@ a {
   display: inline-block;
   padding: 10px; }
 .season-icons-list img {
+  cursor: pointer;
   opacity: .9;
   width: 70px; }
 
 nav {
+  background: rgba(0, 0, 0, 0.1);
   font-family: 'Lato', sans-serif;
+  height: 70px;
   left: 0;
   position: absolute;
   top: 0;
@@ -49,7 +52,8 @@ nav {
     nav li:last-child {
       border: 0; }
   nav a {
-    color: #fff; }
+    color: #fff;
+    font-size: 15px; }
     nav a:hover {
       color: #fcb034; }
   nav span {
@@ -70,6 +74,17 @@ header {
 
 footer {
   width: 100%; }
+
+.social-footer-links {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%; }
+  .social-footer-links li {
+    display: inline-block; }
+  .social-footer-links img {
+    margin: 5px;
+    width: 40px; }
 
 .event-links {
   background-image: url('../assets/tiles/black-screen.png');
@@ -97,3 +112,20 @@ footer {
   .event-links a {
     color: #fff;
     font-size: 16px; }
+
+.sponsor-links {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%; }
+  .sponsor-links h3 {
+    color: #fcb034;
+    font-size: 20px;
+    margin: 10px auto 20px;
+    text-transform: uppercase; }
+  .sponsor-links li {
+    display: inline-block;
+    vertical-align: middle; }
+  .sponsor-links img {
+    margin: 10px;
+    max-width: 80px; }

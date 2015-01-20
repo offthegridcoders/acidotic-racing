@@ -1,0 +1,23 @@
+.sponsor-links {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+
+  h3 {
+    color: $orange;
+    font-size: 20px;
+    margin: 10px auto 20px;
+    text-transform: uppercase;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  img {
+    margin: 10px;
+    max-width: 80px;
+  }
+}
