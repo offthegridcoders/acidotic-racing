@@ -1,8 +1,7 @@
 {
-  "name": "",
-  "version": "0.0.0",
   "devDependencies": {
-    "gulp-sass": "~0.7.0",
-    "gulp-scss-lint": "^0.1.3"
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-scss-lint": "*"
   }
 }
