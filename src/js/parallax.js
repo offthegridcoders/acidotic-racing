@@ -13,7 +13,3 @@ function parallax(){
   }
   checkHeaderPosition();
 }
-
-$(window).scroll(function(e){
-  parallax();
-});
