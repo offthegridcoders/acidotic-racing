@@ -32,7 +32,7 @@
       </ul>
     </nav>
 
-    <header class="winter-header">
+    <header class="winter-header parallax-header">
       <img class="logo" src="assets/logo.png">
       <ul class="season-icons-list">
         <li>
@@ -240,6 +240,16 @@
 
     <script>
       new WOW().init();
+
+      function parallax(){
+        var scrolled = $(window).scrollTop();
+        $('.parallax-header').css('top', -(scrolled * 0.2) + 'px');
+      }
+      
+      $(window).scroll(function(e){
+        parallax();
+      });
+
     </script>
   </body>
 </html>

@@ -121,6 +121,7 @@ header {
   background-size: cover;
   height: 550px;
   padding-top: 120px;
+  position: fixed;
   text-align: center; }
   header img {
     margin-bottom: 25px; }
