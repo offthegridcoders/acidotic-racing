@@ -247,8 +247,13 @@
         console.log($('.parallax-header').css('top'));
       }
       
+      function positionNavbar() {
+        console.log($(window).scrollTop());
+      };
+
       $(window).scroll(function(e){
         parallax();
+        positionNavbar();
       });
 
     </script>
