@@ -246,15 +246,12 @@
         var speed = -1.3;
 
         var newTopPosition = scrollPosition * speed;
-        console.log(newTopPosition);
-        if (newTopPosition > 0) {
           $('.parallax-header').css('top', newTopPosition + 'px');
         }
       }
       
       function positionNavbar() {
-        console.log($(window).scrollTop());
-
+        //console.log($(window).scrollTop());
       };
 
       $(window).scroll(function(e){
