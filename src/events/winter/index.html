@@ -245,17 +245,13 @@
         var scrollPosition = $(window).scrollTop();
         var speed = -1.3;
         var newTopPosition = scrollPosition * speed;
-        $('.parallax-header').css('top', newTopPosition + 'px');
+        if ($(window).scrollTop() > 0) {
+          $('.parallax-header').css('top', newTopPosition + 'px');
+        }
       }
-      
-      function positionNavbar() {
-        console.log($(window).scrollTop());
-      };
-      
 
       $(window).scroll(function(e){
         parallax();
-        positionNavbar();
       });
 
     </script>
