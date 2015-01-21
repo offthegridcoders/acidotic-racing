@@ -99,7 +99,7 @@ nav {
   width: 100%;
   z-index: 9000; }
   nav:hover {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     transition: background .4s ease; }
   nav ul {
     margin: 10px auto 0;
