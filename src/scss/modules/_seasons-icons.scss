@@ -2,6 +2,20 @@
   li {
     display: inline-block;
     padding: 10px;
+
+    a:nth-child(2) {
+      display: none;
+    }
+  }
+
+  li:hover {
+    a:first-child {
+      display: none;
+    }
+
+    a:nth-child(2) {
+      display: block;
+    }
   }
 
   img {

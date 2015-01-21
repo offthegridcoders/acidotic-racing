@@ -77,6 +77,12 @@ article {
 .season-icons-list li {
   display: inline-block;
   padding: 10px; }
+  .season-icons-list li a:nth-child(2) {
+    display: none; }
+.season-icons-list li:hover a:first-child {
+  display: none; }
+.season-icons-list li:hover a:nth-child(2) {
+  display: block; }
 .season-icons-list img {
   cursor: pointer;
   opacity: .9;
