@@ -242,8 +242,12 @@
       new WOW().init();
 
       function parallax(){
-        var scrolled = $(window).scrollTop();
-        $('.parallax-header').css('top', - (scrolled * 1.3) + 'px');
+        var scrollPosition = $(window).scrollTop();
+        var speed = -1.3;
+
+        var newTopPosition = scrollPosition * speed;
+        //if (speed !>)
+        $('.parallax-header').css('top', newTopPosition + 'px');
         console.log($('.parallax-header').css('top'));
       }
       
@@ -253,9 +257,7 @@
       };
 
       $(window).scroll(function(e){
-        if ($(window).scrollTop() < 1) {
-          parallax();
-        }
+        parallax();
         positionNavbar();
       });
 
