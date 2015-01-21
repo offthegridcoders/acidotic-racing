@@ -95,8 +95,12 @@ nav {
   left: 0;
   position: absolute;
   top: 0;
+  transition: background .4s ease;
   width: 100%;
   z-index: 9000; }
+  nav:hover {
+    background: rgba(0, 0, 0, 0.5);
+    transition: background .4s ease; }
   nav ul {
     margin: 10px auto 0;
     max-width: 100%;
