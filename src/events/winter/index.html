@@ -242,8 +242,7 @@
       new WOW().init();
       
       function checkHeaderPosition() {
-        console.log($('.parallax-header').css('top'));
-        if ($('.parallax-header').css('top') < 0) {
+        if ($(window).scrollTop() <= 0) {
           $('.parallax-header').css('top', '0px');
         }
       };
