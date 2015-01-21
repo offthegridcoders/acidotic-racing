@@ -244,6 +244,9 @@
       function parallax(){
         var scrolled = $(window).scrollTop();
         $('.parallax-header').css('top', - (scrolled * 1.3) + 'px');
+        if ($('.parallax-header').css('top') > 0) {
+          console.log('bang');
+        }
       }
       
       $(window).scroll(function(e){
