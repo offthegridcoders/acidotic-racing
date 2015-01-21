@@ -6,6 +6,6 @@ function setNavBar() {
     $('nav').css('position', 'fixed');
     $('nav').css('top', '0px');
   } else {
-    $('nav').css('position', 'static');
+    $('nav').css('position', 'absolute');
   }
 };
