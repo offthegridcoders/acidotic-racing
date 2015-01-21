@@ -43,7 +43,7 @@ a {
 
 .left-side, .right-side {
   display: inline-block;
-  margin: 0 1%;
+  margin: 550px 1%;
   padding: 20px 0;
   vertical-align: top;
   width: 47%; }
@@ -122,7 +122,8 @@ header {
   height: 550px;
   padding-top: 120px;
   position: fixed;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   header img {
     margin-bottom: 25px; }
 
