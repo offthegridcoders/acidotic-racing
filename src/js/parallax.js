@@ -1,6 +1,6 @@
 function checkHeaderPosition() {
   if ($(window).scrollTop() <= 0) {
-    $('.parallax-header').css('top', '0px');
+    $('header').css('top', '0px');
   }
 };
 
