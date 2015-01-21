@@ -4,6 +4,6 @@ function setNavBar() {
     $('nav').css('top', '0px');
   } else {
     $('nav').css('position', 'absolute');
-    $('nav').css('background', 'rgba(0, 0, 0, .1) !important');
+    $('nav:hover').css('background', 'rgba(0, 0, 0, .1) !important');
   }
 };
