@@ -10,6 +10,11 @@
   }
 
   .header {
+    border: solid 1px #000;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px 0;
+
     .fa-flag-checkered {
       font-size: 36px;
       position: relative;
@@ -33,6 +38,7 @@
 
     img {
       float: right;
+      width: 270px;
     }
   }
 }
