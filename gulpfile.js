@@ -1,11 +1,11 @@
 var gulp = require('gulp');
 var scsslint = require('gulp-scss-lint');
 var sass = require('gulp-sass');
+var clean = require('gulp-clean');
 var uglify = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
-var pngquant = require('imagemin-pngquant');
-var minifyHTML = require('gulp-minify-html');
-var clean = require('gulp-clean');
+var useref = require('gulp-useref');
+var gulpif = require('gulp-if');
 
 var paths = {
   images: 'src/assets/**/*',
@@ -20,7 +20,7 @@ var paths = {
 gulp.task('default', ['lint', 'sass','watch']);
 
 // Makes Distribution folder with all files minified
-gulp.task('build', ['lint', 'sass', 'clean', 'minify-css', 'minify-html', 'compress']);
+gulp.task('build', ['lint', 'sass', 'clean', 'useref']);
 
 gulp.task('lint', function() {
   gulp.src(paths.scss)
@@ -38,23 +38,15 @@ gulp.task('clean', function () {
     .pipe(clean({force: true}))
 });
 
-gulp.task('minify-css', function() {
-  gulp.src(paths.css)
-    .pipe(minifyCSS({keepBreaks:true}))
-    .pipe(gulp.dest('./dist/css'))
-});
-
-gulp.task('minify-html', function() {
-  var opts = {comments:true,spare:true};
-  gulp.src(paths.html)
-    .pipe(minifyHTML(opts))
-    .pipe(gulp.dest('./dist/'))
-});
-
-gulp.task('compress', function() {
-  gulp.src(paths.js)
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist/js/'))
+gulp.task('useref', function () {
+    var assets = useref.assets();
+    return gulp.src(paths.html)
+        .pipe(assets)
+        .pipe(gulpif('**/*.js', uglify()))
+        .pipe(gulpif('**/*.css', minifyCSS()))
+        .pipe(assets.restore())
+        .pipe(useref())
+        .pipe(gulp.dest('./dist'));
 });
 
 // Rerun the task when a file changes

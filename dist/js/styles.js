@@ -1,1 +1,0 @@
-function setNavBar(s){headerIsOffScreen()?($(s).css("position","fixed"),$(s).css("top","0px"),$(s).css("background","rgba(0, 0, 0, .8")):($(s).css("position","absolute"),$(s).css("background","rgba(0, 0, 0, 0"))}

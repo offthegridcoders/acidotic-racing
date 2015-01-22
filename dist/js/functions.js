@@ -1,1 +1,0 @@
-function headerIsOffScreen(){return $(window).scrollTop()>parseInt($("header").css("height"),10)-100}

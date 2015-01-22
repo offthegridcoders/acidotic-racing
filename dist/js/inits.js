@@ -1,1 +1,0 @@
-(new WOW).init(),$(window).scroll(function(){parallax(),setNavBar("nav")}),window.onload=function(){setNavBar("nav")};
