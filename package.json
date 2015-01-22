@@ -8,6 +8,7 @@
     "gulp-sass": "*",
     "gulp-scss-lint": "*",
     "gulp-uglify": "^1.1.0",
-    "gulp-useref": "^1.1.1"
+    "gulp-useref": "^1.1.1",
+    "imagemin-pngquant": "^4.0.0"
   }
 }

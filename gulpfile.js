@@ -6,9 +6,10 @@ var uglify = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
 var useref = require('gulp-useref');
 var gulpif = require('gulp-if');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 var paths = {
-  images: 'src/assets/**/*',
   scss: 'src/scss/**/*',
   assets: 'src/assets/**/*',
   css: 'src/css/**/*.css',
@@ -20,7 +21,7 @@ var paths = {
 gulp.task('default', ['lint', 'sass','watch']);
 
 // Makes Distribution folder with all files minified
-gulp.task('build', ['lint', 'sass', 'clean', 'useref']);
+gulp.task('build', ['lint', 'sass', 'clean', 'useref', 'img-min']);
 
 gulp.task('lint', function() {
   gulp.src(paths.scss)
@@ -49,6 +50,15 @@ gulp.task('useref', function () {
         .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('img-min', function () {
+    return gulp.src(paths.assets)
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('./dist/assets'));
+});
 // Rerun the task when a file changes
 gulp.task('watch', function() {
   gulp.watch(paths.scss, ['lint']);
