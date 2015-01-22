@@ -356,3 +356,7 @@ footer {
     text-transform: uppercase; }
   .summer-page .values-block p:nth-child(odd), .spring-page .values-block p:nth-child(odd) {
     color: #caef58; }
+
+.full-page .logo {
+  margin: 20px auto;
+  width: 200px; }
