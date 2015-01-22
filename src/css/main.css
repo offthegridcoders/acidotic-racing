@@ -361,12 +361,15 @@ footer {
     color: #caef58; }
 
 .full-page .logo {
+  margin-bottom: 20px;
   text-align: center; }
   .full-page .logo img {
     margin: 20px;
     width: 230px; }
 .full-page .fa-flag-checkered {
-  font-size: 28px;
+  font-size: 36px;
+  position: relative;
+  top: 6px;
   width: 50px; }
 .full-page h1 {
   display: inline;
@@ -376,4 +379,8 @@ footer {
 .full-page h2 {
   font-size: 19px;
   font-weight: 200;
+  margin-left: 53px;
   text-transform: uppercase; }
+.full-page .date {
+  float: right;
+  font-size: 20px; }

@@ -1,5 +1,6 @@
 .full-page {
   .logo {
+    margin-bottom: 20px;
     text-align: center;
 
     img {
@@ -9,7 +10,9 @@
   }
 
   .fa-flag-checkered {
-    font-size: 28px;
+    font-size: 36px;
+    position: relative;
+    top: +6px;
     width: 50px;
   }
 
@@ -23,6 +26,12 @@
   h2 {
     font-size: 19px;
     font-weight: 200;
+    margin-left: 53px;
     text-transform: uppercase;
+  }
+
+  .date {
+    float: right;
+    font-size: 20px;
   }
 }
