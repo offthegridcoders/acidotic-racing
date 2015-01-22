@@ -9,22 +9,25 @@ a{color:#000;text-decoration:none}
 .spring-page{background-image:url(../assets/tiles/body_wallpaper_stream.jpg)}
 .summer-page{background-image:url(../assets/tiles/body_wallpaper_sand.jpg)}
 .fall-page{background-image:url(../assets/tiles/body_wallpaper.jpg)}
-.left-side,.right-side{display:inline-block;margin:0 1%;padding:20px 0;vertical-align:top;width:47%}
+.left-side,.right-side{display:inline-block;margin:550px 1%;padding:20px 0;vertical-align:top;width:47%}
 .left-side{text-align:right}
 .right-side{padding-top:20px;text-align:left}
 article{margin:20px 0}
 .main-header{color:#fcb034;font-family:Tahoma,Geneva,sans-serif;font-size:70px;margin-bottom:60px;text-shadow:5px 5px 5px #000;text-transform:uppercase}
 .main-header span{color:#fff;display:block;font-family:'Great Vibes',cursive;font-size:70px;font-weight:100;line-height:0;text-transform:lowercase}
 .season-icons-list li{display:inline-block;padding:10px}
+.season-icons-list li a:nth-child(2),.season-icons-list li:hover a:first-child{display:none}
+.season-icons-list li:hover a:nth-child(2){display:block}
 .season-icons-list img{cursor:pointer;opacity:.9;width:70px}
-nav{background:rgba(0,0,0,.1);font-family:Lato,sans-serif;height:70px;left:0;position:absolute;top:0;width:100%}
+nav{background:0 0;font-family:Lato,sans-serif;height:70px;left:0;position:absolute;top:0;transition:background .4s ease;width:100%;z-index:9000}
+nav:hover{transition:background .4s ease}
 nav ul{margin:10px auto 0;max-width:100%;text-align:center}
 nav li{border-right:solid 1px #fff;display:inline-block;padding:15px 30px;text-transform:uppercase}
 nav li:last-child{border:0}
 nav a{color:#fff;font-size:15px}
 nav a:hover{color:#fcb034}
 nav span{text-transform:lowercase}
-header{background-position:50%;background-repeat:no-repeat;background-size:cover;height:550px;padding-top:120px;text-align:center}
+header{background-position:50% 100%;background-repeat:no-repeat;background-size:cover;height:600px;padding-top:120px;position:fixed;text-align:center;width:100%}
 header img{margin-bottom:25px}
 .winter-header{background-image:url(../assets/headers/winter-header.png)}
 .spring-header{background-image:url(../assets/headers/spring-header.png)}

@@ -1,0 +1,1 @@
+function checkHeaderPosition(){$(window).scrollTop()<=0&&$("header").css("top","0px")}function parallax(){var o=$(window).scrollTop(),c=-1.3,e=o*c;$(window).scrollTop()>0&&$("header").css("top",e+"px"),checkHeaderPosition()}
