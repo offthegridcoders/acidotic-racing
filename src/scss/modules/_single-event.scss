@@ -16,15 +16,7 @@
     padding: 10px 0;
     position: relative;
 
-    .fa-flag-checkered {
-      font-size: 36px;
-      position: relative;
-      top: +6px;
-      width: 50px;
-    }
-
     h1 {
-      display: inline;
       font-size: 30px;
       font-weight: 200;
       text-transform: uppercase;
@@ -33,7 +25,6 @@
     h2 {
       font-size: 19px;
       font-weight: 200;
-      margin-left: 53px;
       text-transform: uppercase;
     }
 
@@ -46,10 +37,13 @@
   }
 
   h5 {
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
   }
 
   p {
+    font-size: 14px;
     font-weight: 200;
+    margin-bottom: 15px;
   }
 }

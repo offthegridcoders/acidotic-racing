@@ -372,20 +372,13 @@ footer {
   border-right: 0;
   padding: 10px 0;
   position: relative; }
-  .full-page .header .fa-flag-checkered {
-    font-size: 36px;
-    position: relative;
-    top: 6px;
-    width: 50px; }
   .full-page .header h1 {
-    display: inline;
     font-size: 30px;
     font-weight: 200;
     text-transform: uppercase; }
   .full-page .header h2 {
     font-size: 19px;
     font-weight: 200;
-    margin-left: 53px;
     text-transform: uppercase; }
   .full-page .header img {
     bottom: 10px;
@@ -393,6 +386,9 @@ footer {
     right: 0;
     width: 270px; }
 .full-page h5 {
-  font-weight: 400; }
+  font-size: 16px;
+  font-weight: 600; }
 .full-page p {
-  font-weight: 200; }
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 15px; }
