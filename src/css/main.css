@@ -370,7 +370,8 @@ footer {
   border: solid 1px #000;
   border-left: 0;
   border-right: 0;
-  padding: 10px 0; }
+  padding: 10px 0;
+  position: relative; }
   .full-page .header .fa-flag-checkered {
     font-size: 36px;
     position: relative;
@@ -387,5 +388,7 @@ footer {
     margin-left: 53px;
     text-transform: uppercase; }
   .full-page .header img {
-    float: right;
+    bottom: 10px;
+    position: absolute;
+    right: 0;
     width: 270px; }
