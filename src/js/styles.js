@@ -10,3 +10,4 @@ $('nav').mouseover(function() {
 $('nav').mouseout(function() {
   $(this).css('background','rgba(0, 0, 0, .1');
 });
+
