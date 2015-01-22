@@ -14,6 +14,6 @@ function setNavBar(elm) {
     console.log('header exists')
   } else {
     $('nav').css('position', 'absolute');
-    $('nav').css('background','rgba(0, 0, 0, 0');
+    $('nav').css('background','rgba(0, 0, 0, .8');
   }
 };
