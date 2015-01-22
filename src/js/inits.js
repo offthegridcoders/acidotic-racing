@@ -4,3 +4,7 @@ $(window).scroll(function(e){
   parallax();
   setNavBar();
 });
+
+window.onload = function(){
+  setNavBar();
+};
