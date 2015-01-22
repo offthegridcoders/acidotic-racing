@@ -23,18 +23,6 @@ var paths = {
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['lint', 'sass','watch']);
 
-// Makes Distribution folder with all files minified
-gulp.task('build', ['clean'], function() {
-
-
-});
-
-gulp.task('clean', function () {
-  return gulp.src('.')
-    .pipe(clean({force: true}))
-    .pipe(gulp.dest('dist'));
-});
-
 gulp.task('lint', function() {
   gulp.src(paths.scss)
     .pipe(scsslint());
@@ -46,15 +34,19 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./src/css'));
 });
 
-gulp.task('fileinclude', function() {
+// Makes Distribution folder with all files minified
+gulp.task('build', ['clean', 'useref', 'img-min'], function() {
   return gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('clean', function () {
+  return gulp.src('dist', {read: false})
+    .pipe(clean());
+});
 
-
-gulp.task('useref', function () {
+gulp.task('useref', ['clean'], function () {
   var assets = useref.assets();
   gulp.src(paths.html)
     .pipe(assets)
@@ -65,7 +57,7 @@ gulp.task('useref', function () {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('img-min', function () {
+gulp.task('img-min', ['clean'], function () {
   return gulp.src(paths.assets)
     .pipe(imagemin({
         progressive: true,
@@ -74,6 +66,13 @@ gulp.task('img-min', function () {
     }))
     .pipe(gulp.dest('./dist/assets'));
 });
+
+gulp.task('fileinclude', function() {
+  return gulp.src(paths.distHTML)
+    .pipe(fileinclude())
+    .pipe(gulp.dest('./dist'));
+});
+
 // Rerun the task when a file changes
 gulp.task('watch', function() {
   gulp.watch(paths.scss, ['fileinclude']);
