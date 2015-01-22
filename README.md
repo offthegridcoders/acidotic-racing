@@ -8,7 +8,9 @@ Static HTML
 `sudo npm install`
 `gem install scss-lint`
 
-#### Watch mode lints and compiles sass on fly
+#### Builds static website
+>Lints, Compiles Sass, Minifies CSS, JS and Images
+>Builds html files from partials and templates
 `gulp`
 
 ####About

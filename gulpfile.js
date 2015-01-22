@@ -20,22 +20,6 @@ var paths = {
   distHTML: 'dist/**/*.html'
 };
 
-var pathsCopy;
-
-// The default task (called when you run `gulp` from cli)
-/*gulp.task('default', ['lint', 'sass','watch']);
-
-gulp.task('lint', function() {
-  gulp.src(paths.scss)
-    .pipe(scsslint());
-});
-
-gulp.task('sass', function () {
-  gulp.src(paths.scss)
-    .pipe(sass())
-    .pipe(gulp.dest('./src/css'));
-});*/
-
 // Makes Distribution folder with all files minified
 gulp.task('default', ['sass', 'clean', 'useref', 'img-min'], function() {
   return gulp.src(paths.distHTML)
