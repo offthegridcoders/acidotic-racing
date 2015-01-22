@@ -61,7 +61,7 @@ a {
   box-shadow: 3px 3px 20px #000;
   margin: 100px auto 50px;
   padding: 20px;
-  width: 80%; }
+  width: 900px; }
 
 article {
   margin: 20px 0; }
@@ -381,6 +381,5 @@ footer {
   font-weight: 200;
   margin-left: 53px;
   text-transform: uppercase; }
-.full-page .header .date {
-  float: right;
-  font-size: 20px; }
+.full-page .header img {
+  float: right; }
