@@ -1,16 +1,15 @@
 # acidotic Racing Official Website
 
-You can see the progress here: [LINK](http://thewickedwebdev.github.io/acidotic-racing/)
+You can see the progress here: [LINK](http://thewickedwebdev.github.io/acidotic-racing/dist/)
 
-Static HTML
+Generated Static HTML using Gulp
 
 #### Dependancies
 `sudo npm install`
 `gem install scss-lint`
 
-#### Builds static website
->Lints, Compiles Sass, Minifies CSS, JS and Images
->Builds html files from partials and templates
+#### Builds Static Website
+>Lints, Compiles Sass, Minifies CSS, JS and Images / And builds html files from partials and templates
 `gulp`
 
 ####About
