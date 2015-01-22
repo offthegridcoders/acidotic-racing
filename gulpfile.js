@@ -8,20 +8,22 @@ var useref = require('gulp-useref');
 var gulpif = require('gulp-if');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var fileinclude = require('gulp-file-include');
 
 var paths = {
   scss: 'src/scss/**/*',
   assets: 'src/assets/**/*',
   css: 'src/css/**/*.css',
   html: 'src/**/*.html',
-  js: 'src/js/**/*.js'
+  js: 'src/js/**/*.js',
+  templates: 'src/templates/_*.html'
 };
 
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['lint', 'sass','watch']);
 
 // Makes Distribution folder with all files minified
-gulp.task('build', ['lint', 'sass', 'clean', 'useref', 'img-min']);
+gulp.task('build', ['lint', 'sass', 'clean', 'fileinclude', 'useref', 'img-min']);
 
 gulp.task('lint', function() {
   gulp.src(paths.scss)
@@ -32,6 +34,12 @@ gulp.task('sass', function () {
     gulp.src(paths.scss)
         .pipe(sass())
         .pipe(gulp.dest('./src/css'));
+});
+
+gulp.task('fileinclude', function() {
+  return gulp.src(paths.html)
+    .pipe(fileinclude())
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('clean', function () {
@@ -61,6 +69,7 @@ gulp.task('img-min', function () {
 });
 // Rerun the task when a file changes
 gulp.task('watch', function() {
+  gulp.watch(paths.scss, ['fileinclude']);
   gulp.watch(paths.scss, ['lint']);
   gulp.watch(paths.scss, ['sass']);
 });
