@@ -14,7 +14,14 @@ var paths = {
   scss: 'src/scss/**/*',
   assets: 'src/assets/**/*',
   css: 'src/css/**/*.css',
-  html: 'src/**/*.html',
+  html: [
+    'src/*.html',
+    'src/contact/*.html',
+    'src/events/**/*.html',
+    'src/photos/*.html',
+    'src/results/*.html',
+    'src/why-acidotic/*.html'
+  ],
   js: 'src/js/**/*.js',
   templates: 'src/templates/_*.html'
 };
@@ -48,14 +55,14 @@ gulp.task('clean', function () {
 });
 
 gulp.task('useref', function () {
-    var assets = useref.assets();
-    return gulp.src(paths.html)
-        .pipe(assets)
-        .pipe(gulpif('**/*.js', uglify()))
-        .pipe(gulpif('**/*.css', minifyCSS()))
-        .pipe(assets.restore())
-        .pipe(useref())
-        .pipe(gulp.dest('./dist'));
+  var assets = useref.assets();
+  return gulp.src(paths.html)
+      .pipe(assets)
+      .pipe(gulpif('**/*.js', uglify()))
+      .pipe(gulpif('**/*.css', minifyCSS()))
+      .pipe(assets.restore())
+      .pipe(useref())
+      .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('img-min', function () {
@@ -69,7 +76,6 @@ gulp.task('img-min', function () {
 });
 // Rerun the task when a file changes
 gulp.task('watch', function() {
-  gulp.watch(paths.scss, ['fileinclude']);
   gulp.watch(paths.scss, ['lint']);
   gulp.watch(paths.scss, ['sass']);
 });
