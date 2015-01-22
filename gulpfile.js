@@ -22,7 +22,7 @@ var paths = {
 
 // Makes Distribution folder with all files minified
 gulp.task('default', ['sass', 'clean', 'useref', 'img-min'], function() {
-  return gulp.src(paths.distHTML)
+  gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
 });
