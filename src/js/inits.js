@@ -2,9 +2,9 @@ new WOW().init();
 
 $(window).scroll(function(e){
   parallax();
-  setNavBar();
+  setNavBar('nav');
 });
 
 window.onload = function(){
-  setNavBar();
+  setNavBar('nav');
 };
