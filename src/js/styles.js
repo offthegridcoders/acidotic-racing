@@ -1,3 +1,4 @@
+// NAVBAR STYLING
 $('nav').mouseover(function() {
   if (headerIsOffScreen()) {
     $(this).css('background','rgba(0, 0, 0, .8');
