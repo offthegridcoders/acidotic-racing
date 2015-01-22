@@ -1,11 +1,22 @@
 .full-page {
   .logo {
-
     text-align: center;
 
     img {
       margin: 20px;
       width: 230px;
     }
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 19px;
+    font-weight: 200;
+    text-transform: uppercase;
   }
 }

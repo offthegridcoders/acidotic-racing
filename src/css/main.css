@@ -60,6 +60,7 @@ a {
   border-radius: 4px;
   box-shadow: 3px 3px 20px #000;
   margin: 100px auto 50px;
+  padding: 20px;
   width: 80%; }
 
 article {
@@ -364,3 +365,11 @@ footer {
   .full-page .logo img {
     margin: 20px;
     width: 230px; }
+.full-page h1 {
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: uppercase; }
+.full-page h2 {
+  font-size: 19px;
+  font-weight: 200;
+  text-transform: uppercase; }
