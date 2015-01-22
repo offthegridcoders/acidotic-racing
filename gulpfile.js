@@ -37,19 +37,11 @@ gulp.task('sass', function () {
 });*/
 
 // Makes Distribution folder with all files minified
-gulp.task('default', ['sass', 'clean', 'useref', 'img-copy'], function() {
+gulp.task('default', ['sass', 'clean', 'useref', 'img-min'], function() {
   return gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
 });
-
-// Makes Distribution folder with all files minified
-gulp.task('build', ['sass', 'clean', 'useref', 'img-min'], function() {
-  return gulp.src(paths.distHTML)
-    .pipe(fileinclude())
-    .pipe(gulp.dest('./dist'));
-});
-
 
 gulp.task('sass', ['lint'], function () {
   gulp.src(paths.scss)
