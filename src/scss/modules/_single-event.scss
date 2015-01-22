@@ -9,29 +9,31 @@
     }
   }
 
-  .fa-flag-checkered {
-    font-size: 36px;
-    position: relative;
-    top: +6px;
-    width: 50px;
-  }
+  .header {
+    .fa-flag-checkered {
+      font-size: 36px;
+      position: relative;
+      top: +6px;
+      width: 50px;
+    }
 
-  h1 {
-    display: inline;
-    font-size: 30px;
-    font-weight: 200;
-    text-transform: uppercase;
-  }
+    h1 {
+      display: inline;
+      font-size: 30px;
+      font-weight: 200;
+      text-transform: uppercase;
+    }
 
-  h2 {
-    font-size: 19px;
-    font-weight: 200;
-    margin-left: 53px;
-    text-transform: uppercase;
-  }
+    h2 {
+      font-size: 19px;
+      font-weight: 200;
+      margin-left: 53px;
+      text-transform: uppercase;
+    }
 
-  .date {
-    float: right;
-    font-size: 20px;
+    .date {
+      float: right;
+      font-size: 20px;
+    }
   }
 }

@@ -366,21 +366,21 @@ footer {
   .full-page .logo img {
     margin: 20px;
     width: 230px; }
-.full-page .fa-flag-checkered {
+.full-page .header .fa-flag-checkered {
   font-size: 36px;
   position: relative;
   top: 6px;
   width: 50px; }
-.full-page h1 {
+.full-page .header h1 {
   display: inline;
   font-size: 30px;
   font-weight: 200;
   text-transform: uppercase; }
-.full-page h2 {
+.full-page .header h2 {
   font-size: 19px;
   font-weight: 200;
   margin-left: 53px;
   text-transform: uppercase; }
-.full-page .date {
+.full-page .header .date {
   float: right;
   font-size: 20px; }
