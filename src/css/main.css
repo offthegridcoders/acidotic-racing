@@ -386,11 +386,13 @@ footer {
   background-image: url('../assets/events/lmr.jpg');
   background-position: 50% 0;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   display: inline-block;
-  height: 300px;
+  height: 350px;
   vertical-align: top;
   width: 450px; }
+  .full-page .race-image img {
+    width: 150px; }
 .full-page .race-details {
   display: inline-block;
   margin-left: 20px;
