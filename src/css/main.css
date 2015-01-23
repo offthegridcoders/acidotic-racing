@@ -464,19 +464,25 @@ footer {
 .full-page .reg-closed {
   color: #f00; }
 .full-page .sponsor-image {
-  width: 150px;
   margin-bottom: 20px;
-  margin-top: 10px; }
-.full-page .accolades-article div {
-  margin: 20px 0;
-  text-align: center;
-  border-bottom: solid 1px #000;
-  padding-bottom: 10px; }
-.full-page .accolades-article h2 {
-  font-size: 20px;
-  text-align: center; }
-.full-page .accolades-article p {
-  display: inline-block;
-  font-size: 16px; }
-.full-page .accolades-article img {
-  max-width: 150px; }
+  margin-top: 10px;
+  width: 150px; }
+.full-page .accolades-article {
+  margin: 40px 0 0; }
+  .full-page .accolades-article div {
+    border-bottom: solid 1px #000;
+    margin: 20px 0;
+    padding-bottom: 10px; }
+  .full-page .accolades-article h2 {
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .full-page .accolades-article p {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    width: 500px; }
+  .full-page .accolades-article img {
+    margin-right: 30px;
+    max-width: 150px;
+    vertical-align: middle;
+    width: 200px; }
