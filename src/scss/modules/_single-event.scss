@@ -89,6 +89,13 @@
     input {
       display: inline-block;
     }
+
+    button {
+      background: transparent;
+      border: solid 1px #000;
+      padding: 10px 15px;
+      text-transform: uppercase;
+    }
   }
 
   .reg-open {

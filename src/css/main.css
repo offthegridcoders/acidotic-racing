@@ -418,6 +418,11 @@ footer {
   vertical-align: middle; }
 .full-page .frm-email-notification input {
   display: inline-block; }
+.full-page .frm-email-notification button {
+  background: transparent;
+  border: solid 1px #000;
+  padding: 10px 15px;
+  text-transform: uppercase; }
 .full-page .reg-open {
   color: #b2d79f; }
 .full-page .reg-closed {
