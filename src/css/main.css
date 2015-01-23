@@ -248,10 +248,10 @@ footer {
     margin-bottom: 10px; }
 
 .left-side .green-box {
-  margin-left: 40%; }
+  margin-left: 35%; }
 
 .right-side .green-box {
-  margin-right: 40%; }
+  margin-right: 35%; }
 
 .green-box {
   background-image: url('../assets/tiles/green-box.jpg');
@@ -262,6 +262,9 @@ footer {
   padding: 35px; }
   .green-box p {
     color: #fff; }
+    .green-box p i {
+      text-align: left;
+      width: 25px; }
   .green-box p:first-child {
     margin-bottom: 10px; }
 
@@ -350,6 +353,9 @@ footer {
 
 .contact-event {
   background-image: url('../assets/events/contact_event.jpg'); }
+
+.why-event {
+  background-image: url('../assets/events/why-acidotic-01.jpg'); }
 
 .winter-page .values-block, .fall-page .values-block {
   margin: 60px 0; }

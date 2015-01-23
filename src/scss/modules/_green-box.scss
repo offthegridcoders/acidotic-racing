@@ -1,12 +1,12 @@
 .left-side {
   .green-box {
-    margin-left: 40%;
+    margin-left: 35%;
   }
 }
 
 .right-side {
   .green-box {
-    margin-right: 40%;
+    margin-right: 35%;
   }
 }
 
@@ -20,6 +20,11 @@
 
   p {
     color: #fff;
+
+    i {
+      text-align: left;
+      width: 25px;
+    }
   }
 
   p:first-child {
