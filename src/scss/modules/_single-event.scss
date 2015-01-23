@@ -148,26 +148,27 @@
     color: $red;
   }
 
-  .sponsor-img {
+  .sponsor-image {
     width: 150px;
     margin-bottom: 20px;
     margin-top: 10px;
   }
 
   .accolades-article {
-    text-align: center;
-
     div {
       margin: 20px 0;
       text-align: center;
       border-bottom: solid 1px #000;
       padding-bottom: 10px;
     }
+
     h2 {
       font-size: 20px;
+      text-align: center;
     }
 
     p {
+      display: inline-block;
       font-size: 16px;
     }
 
