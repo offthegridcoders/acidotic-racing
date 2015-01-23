@@ -406,12 +406,9 @@ footer {
     background-color: #fff;
     bottom: 0;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d999999',  endColorstr='#00ffffff',GradientType=1 );
-    /* IE6-8 fallback on horizontal gradient */
     padding: 10px;
     position: absolute;
-    right: 0;
-    -webkit-transform: rotate(30deg);
-    transform: rotate(90deg); }
+    right: 0; }
 .full-page .race-details {
   display: inline-block;
   margin-left: 20px;
