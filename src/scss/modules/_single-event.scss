@@ -44,7 +44,8 @@
     width: 450px;
 
     img {
-      width: 150px;
+      margin: 10px;
+      width: 130px;
     }
   }
 
@@ -63,6 +64,17 @@
       font-size: 14px;
       font-weight: 200;
       margin-bottom: 15px;
+    }
+  }
+
+  .button-wrapper {
+    img {
+      width: 100px;
+    }
+
+    button {
+      background-color: transparent;
+      border: solid $orange 1px;
     }
   }
 }

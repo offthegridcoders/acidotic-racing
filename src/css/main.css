@@ -392,7 +392,8 @@ footer {
   vertical-align: top;
   width: 450px; }
   .full-page .race-image img {
-    width: 150px; }
+    margin: 10px;
+    width: 130px; }
 .full-page .race-details {
   display: inline-block;
   margin-left: 20px;
@@ -405,3 +406,8 @@ footer {
     font-size: 14px;
     font-weight: 200;
     margin-bottom: 15px; }
+.full-page .button-wrapper img {
+  width: 100px; }
+.full-page .button-wrapper button {
+  background-color: transparent;
+  border: solid #fcb034 1px; }
