@@ -178,9 +178,9 @@
     }
 
     img {
+      float: left;
       margin: 20px 30px 20px 0;
       max-width: 150px;
-      float: left;
       vertical-align: middle;
       width: 200px;
     }
@@ -188,11 +188,12 @@
 
   h4 {
     font-size: 20px;
-    text-transform: uppercase;
     margin-bottom: 10px;
+    text-transform: uppercase;
   }
 
   .course-map {
+    margin-top: 15px;
     max-width: 100%;
   }
 }
