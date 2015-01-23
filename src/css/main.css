@@ -154,6 +154,9 @@ header {
 .results-header {
   background-image: url('../assets/headers/results-header.png'); }
 
+.photos-header {
+  background-image: url('../assets/headers/photos-header.png'); }
+
 footer {
   width: 100%; }
 
