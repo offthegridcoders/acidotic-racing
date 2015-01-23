@@ -348,6 +348,9 @@ footer {
     margin-bottom: 50px;
     margin-top: 50px; }
 
+.contact-event {
+  background-image: url('../assets/events/contact_event.jpg'); }
+
 .winter-page .values-block, .fall-page .values-block {
   margin: 60px 0; }
   .winter-page .values-block p, .fall-page .values-block p {
