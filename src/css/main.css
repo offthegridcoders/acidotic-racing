@@ -60,7 +60,7 @@ a {
   border-radius: 4px;
   box-shadow: 3px 3px 20px #000;
   margin: 100px auto 50px;
-  padding: 20px 70px;
+  padding: 40px 70px;
   width: 900px; }
 
 article {
@@ -382,10 +382,18 @@ footer {
     position: absolute;
     right: 0;
     width: 270px; }
-.full-page h5 {
-  font-size: 16px;
-  font-weight: 600; }
-.full-page p {
-  font-size: 14px;
-  font-weight: 200;
-  margin-bottom: 15px; }
+.full-page .race-image {
+  background-image: url('../assets/events/lmr.jpg');
+  display: inline-block;
+  height: 250px;
+  width: 400px; }
+.full-page .race-details {
+  display: inline-block;
+  width: 300px; }
+  .full-page .race-details h5 {
+    font-size: 16px;
+    font-weight: 600; }
+  .full-page .race-details p {
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 15px; }
