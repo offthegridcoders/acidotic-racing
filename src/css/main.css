@@ -449,6 +449,7 @@ footer {
   display: inline-block;
   margin-bottom: 0;
   margin-left: 0;
+  text-transform: uppercase;
   vertical-align: middle; }
 .full-page .button-wrapper i {
   padding-top: 4px;
