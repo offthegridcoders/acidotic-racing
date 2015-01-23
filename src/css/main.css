@@ -157,6 +157,12 @@ header {
 .photos-header {
   background-image: url('../assets/headers/photos-header.png'); }
 
+.why-header {
+  background-image: url('../assets/headers/why-header.png'); }
+
+.contact-header {
+  background-image: url('../assets/headers/contact-header.png'); }
+
 footer {
   width: 100%; }
 
