@@ -407,7 +407,14 @@ footer {
     font-weight: 200;
     margin-bottom: 15px; }
 .full-page .button-wrapper img {
-  width: 100px; }
-.full-page .button-wrapper button {
-  background-color: transparent;
-  border: solid #fcb034 1px; }
+  cursor: pointer;
+  vertical-align: middle;
+  width: 125px; }
+.full-page .button-wrapper p {
+  display: inline-block;
+  vertical-align: middle; }
+.full-page .button-wrapper i {
+  padding-top: 4px;
+  vertical-align: middle; }
+.full-page .reg-open {
+  color: #b2d79f; }

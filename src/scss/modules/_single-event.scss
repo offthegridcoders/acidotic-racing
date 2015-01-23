@@ -69,12 +69,23 @@
 
   .button-wrapper {
     img {
-      width: 100px;
+      cursor: pointer;
+      vertical-align: middle;
+      width: 125px;
     }
 
-    button {
-      background-color: transparent;
-      border: solid $orange 1px;
+    p {
+      display: inline-block;
+      vertical-align: middle;
     }
+
+    i {
+      padding-top: 4px;
+      vertical-align: middle;
+    }
+  }
+  
+  .reg-open {
+    color: $green;
   }
 }
