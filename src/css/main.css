@@ -415,7 +415,7 @@ footer {
     right: 0;
     transition: padding .4s ease; }
     .full-page .race-image i:hover {
-      padding: 10px 25px 25px 10px;
+      padding: 8px 23px 23px 8px;
       transition: padding .4s ease; }
 .full-page .race-details {
   display: inline-block;
