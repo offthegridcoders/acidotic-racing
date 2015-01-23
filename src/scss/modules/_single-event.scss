@@ -35,15 +35,20 @@
 
   .race-image {
     background-image: url('../assets/events/lmr.jpg');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
     display: inline-block;
-    height: 250px;
-    width: 400px;
+    height: 300px;
+    vertical-align: top;
+    width: 450px;
   }
 
   .race-details {
     display: inline-block;
-    width: 300px;
-    
+    margin-left: 20px;
+    width: 200px;
+
     h5 {
       font-size: 16px;
       font-weight: 600;
