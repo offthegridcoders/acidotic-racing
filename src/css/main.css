@@ -467,3 +467,9 @@ footer {
   width: 150px;
   margin-bottom: 20px;
   margin-top: 10px; }
+.full-page .accolades-article h2 {
+  font-size: 20px; }
+.full-page .accolades-article p {
+  font-size: 16px; }
+.full-page .accolades-article img {
+  max-width: 150px; }
