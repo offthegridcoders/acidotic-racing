@@ -86,8 +86,12 @@
   }
 
   .frm-email-notification {
+    margin-top: 10px;
+
     input {
       display: inline-block;
+      height: 35px;
+      width: 250px;
     }
 
     button {
