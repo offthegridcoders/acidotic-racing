@@ -418,6 +418,8 @@ footer {
   vertical-align: middle; }
 .full-page .frm-email-notification {
   margin-top: 10px; }
+  .full-page .frm-email-notification label {
+    display: block; }
   .full-page .frm-email-notification input {
     display: inline-block;
     height: 35px;

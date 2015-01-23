@@ -88,6 +88,10 @@
   .frm-email-notification {
     margin-top: 10px;
 
+    label {
+      display: block;
+    }
+
     input {
       display: inline-block;
       height: 35px;
