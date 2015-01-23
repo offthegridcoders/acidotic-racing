@@ -416,7 +416,7 @@ footer {
 .full-page .button-wrapper i {
   padding-top: 4px;
   vertical-align: middle; }
-.full-page .email-notification {
+.full-page .frm-email-notification input {
   display: inline-block; }
 .full-page .reg-open {
   color: #b2d79f; }

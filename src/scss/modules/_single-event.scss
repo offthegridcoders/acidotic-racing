@@ -85,8 +85,10 @@
     }
   }
 
-  .email-notification {
-    display: inline-block;
+  .frm-email-notification {
+    input {
+      display: inline-block;
+    }
   }
 
   .reg-open {
