@@ -60,8 +60,10 @@
       background: linear-gradient(135deg,  rgba(153, 153, 153, .05) 38%, rgba(212, 212, 212, .7) 53%, rgba(224, 224, 224, 0) 56%, rgba(255, 255, 255, 0) 64%); // W3C 
       background-color: #fff;
       bottom: 0;
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d999999',  endColorstr='#00ffffff',GradientType=1 ); // IE6-8 fallback on horizontal gradient
-      padding: 10px;
+      color: rgba(0, 0, 0, 0.52);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d999999',  endColorstr='#00ffffff',GradientType=1 );
+      font-size: 14px; // IE6-8 fallback on horizontal gradient
+      padding: 4px 20px 20px 4px;
       position: absolute;
       right: 0;
     }
