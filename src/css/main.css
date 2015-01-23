@@ -407,11 +407,16 @@ footer {
     background-color: #fff;
     bottom: 0;
     color: rgba(0, 0, 0, 0.52);
+    cursor: pointer;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d999999',  endColorstr='#00ffffff',GradientType=1 );
     font-size: 14px;
     padding: 4px 20px 20px 4px;
     position: absolute;
-    right: 0; }
+    right: 0;
+    transition: padding .4s ease; }
+    .full-page .race-image i:hover {
+      padding: 10px 25px 25px 10px;
+      transition: padding .4s ease; }
 .full-page .race-details {
   display: inline-block;
   margin-left: 20px;

@@ -61,11 +61,18 @@
       background-color: #fff;
       bottom: 0;
       color: rgba(0, 0, 0, 0.52);
+      cursor: pointer;
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d999999',  endColorstr='#00ffffff',GradientType=1 );
       font-size: 14px; // IE6-8 fallback on horizontal gradient
       padding: 4px 20px 20px 4px;
       position: absolute;
       right: 0;
+      transition: padding .4s ease;
+
+      &:hover {
+        padding: 10px 25px 25px 10px;
+        transition: padding .4s ease;
+      }
     }
   }
 
