@@ -455,10 +455,15 @@ footer {
     width: 250px; }
   .full-page .frm-email-notification button {
     background: transparent;
-    border: solid 1px #000;
+    border: solid 1px #fcb034;
+    color: #fcb034;
     padding: 10px 15px;
     text-transform: uppercase; }
 .full-page .reg-open {
   color: #409117; }
 .full-page .reg-closed {
   color: #f00; }
+.full-page img {
+  width: 150px;
+  margin-bottom: 20px;
+  margin-top: 10px; }

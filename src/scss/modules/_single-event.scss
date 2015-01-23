@@ -133,7 +133,8 @@
 
     button {
       background: transparent;
-      border: solid 1px #000;
+      border: solid 1px $orange;
+      color: $orange;
       padding: 10px 15px;
       text-transform: uppercase;
     }
@@ -145,6 +146,12 @@
 
   .reg-closed {
     color: $red;
+  }
+
+  img {
+    width: 150px;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
 }
 
