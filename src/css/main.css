@@ -351,7 +351,7 @@ footer {
 .summer-page .values-block, .spring-page .values-block {
   margin: 60px 0; }
   .summer-page .values-block p, .spring-page .values-block p {
-    color: #b2d79f;
+    color: #409117;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 50px;
     font-weight: 600;
@@ -408,6 +408,7 @@ footer {
     margin-bottom: 15px; }
 .full-page .button-wrapper img {
   cursor: pointer;
+  margin-left: 10px;
   vertical-align: middle;
   width: 125px; }
 .full-page .button-wrapper p {
@@ -417,12 +418,16 @@ footer {
   padding-top: 4px;
   vertical-align: middle; }
 .full-page .frm-email-notification {
-  margin-top: 10px; }
+  border-bottom: solid 1px #000;
+  margin-top: 20px;
+  padding-bottom: 15px; }
   .full-page .frm-email-notification label {
-    display: block; }
+    display: block;
+    padding-bottom: 5px; }
   .full-page .frm-email-notification input {
     display: inline-block;
     height: 35px;
+    padding-left: 10px;
     width: 250px; }
   .full-page .frm-email-notification button {
     background: transparent;
@@ -430,6 +435,6 @@ footer {
     padding: 10px 15px;
     text-transform: uppercase; }
 .full-page .reg-open {
-  color: #b2d79f; }
+  color: #409117; }
 .full-page .reg-closed {
   color: #f00; }

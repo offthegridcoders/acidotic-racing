@@ -70,6 +70,7 @@
   .button-wrapper {
     img {
       cursor: pointer;
+      margin-left: 10px;
       vertical-align: middle;
       width: 125px;
     }
@@ -86,15 +87,19 @@
   }
 
   .frm-email-notification {
-    margin-top: 10px;
+    border-bottom: solid 1px #000;
+    margin-top: 20px;
+    padding-bottom: 15px;
 
     label {
       display: block;
+      padding-bottom: 5px;
     }
 
     input {
       display: inline-block;
       height: 35px;
+      padding-left: 10px;
       width: 250px;
     }
 
