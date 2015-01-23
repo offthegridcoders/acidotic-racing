@@ -470,7 +470,6 @@ footer {
 .full-page .accolades-article {
   margin: 40px 0 0; }
   .full-page .accolades-article div {
-    border-bottom: solid 1px #000;
     margin: 20px 0;
     padding-bottom: 10px; }
   .full-page .accolades-article h2 {
@@ -485,8 +484,9 @@ footer {
     vertical-align: middle;
     width: 500px; }
   .full-page .accolades-article img {
-    margin-right: 30px;
+    margin: 20px 30px 20px 0;
     max-width: 150px;
+    float: left;
     vertical-align: middle;
     width: 200px; }
 .full-page h4 {
