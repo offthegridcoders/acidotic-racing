@@ -360,6 +360,21 @@ footer {
   .summer-page .values-block p:nth-child(odd), .spring-page .values-block p:nth-child(odd) {
     color: #caef58; }
 
+.full-page i {
+  width: 25px; }
+.full-page h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase; }
+.full-page h5 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize; }
+.full-page p {
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 15px;
+  margin-left: 29px; }
 .full-page .logo {
   text-align: right; }
   .full-page .logo img {
@@ -413,7 +428,8 @@ footer {
     padding: 4px 20px 20px 4px;
     position: absolute;
     right: 0;
-    transition: padding .4s ease; }
+    transition: padding .4s ease;
+    width: auto; }
     .full-page .race-image i:hover {
       padding: 8px 23px 23px 8px;
       transition: padding .4s ease; }
@@ -421,14 +437,6 @@ footer {
   display: inline-block;
   margin-left: 20px;
   width: 200px; }
-.full-page h5 {
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: capitalize; }
-.full-page p {
-  font-size: 14px;
-  font-weight: 200;
-  margin-bottom: 15px; }
 .full-page .button-wrapper img {
   cursor: pointer;
   margin-left: 10px;
@@ -489,10 +497,6 @@ footer {
     max-width: 150px;
     vertical-align: middle;
     width: 200px; }
-.full-page h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  text-transform: uppercase; }
 .full-page .course-map {
   margin-top: 15px;
   max-width: 100%; }
