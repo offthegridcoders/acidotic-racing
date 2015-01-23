@@ -416,5 +416,9 @@ footer {
 .full-page .button-wrapper i {
   padding-top: 4px;
   vertical-align: middle; }
+.full-page .email-notification {
+  display: inline-block; }
 .full-page .reg-open {
   color: #b2d79f; }
+.full-page .reg-closed {
+  color: #f00; }
