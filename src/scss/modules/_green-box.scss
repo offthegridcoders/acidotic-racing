@@ -1,12 +1,12 @@
 .left-side {
   .green-box {
-    margin-left: 35%;
+    margin-left: 25%;
   }
 }
 
 .right-side {
   .green-box {
-    margin-right: 35%;
+    margin-right: 25%;
   }
 }
 
@@ -14,12 +14,14 @@
   background-image: url('../assets/tiles/green-box.jpg');
   box-shadow: 3px 3px 20px #000;
   display: block;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 200;
   margin-top: 20px;
   padding: 35px;
 
   p {
-    color: #fff;
+    color: #fff; 
+    margin-bottom: 10px;
 
     i {
       text-align: left;
@@ -27,7 +29,7 @@
     }
   }
 
-  p:first-child {
-    margin-bottom: 10px;
+  p:last-child {
+    margin-bottom: 0;
   }
 }

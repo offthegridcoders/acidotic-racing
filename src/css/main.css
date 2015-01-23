@@ -230,43 +230,47 @@ footer {
     max-width: 80px; }
 
 .left-side .blue-box {
-  margin-left: 40%; }
+  margin-left: 20%; }
 
 .right-side .blue-box {
-  margin-right: 40%; }
+  margin-right: 20%; }
 
 .blue-box {
   background-image: url('../assets/tiles/blue-box.jpg');
   box-shadow: 3px 3px 20px #000;
   display: block;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 200;
   margin-top: 20px;
   padding: 35px; }
   .blue-box p {
-    color: #fff; }
-  .blue-box p:first-child {
+    color: #fff;
     margin-bottom: 10px; }
+  .blue-box p:last-child {
+    margin-bottom: 0; }
 
 .left-side .green-box {
-  margin-left: 35%; }
+  margin-left: 25%; }
 
 .right-side .green-box {
-  margin-right: 35%; }
+  margin-right: 25%; }
 
 .green-box {
   background-image: url('../assets/tiles/green-box.jpg');
   box-shadow: 3px 3px 20px #000;
   display: block;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 200;
   margin-top: 20px;
   padding: 35px; }
   .green-box p {
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 10px; }
     .green-box p i {
       text-align: left;
       width: 25px; }
-  .green-box p:first-child {
-    margin-bottom: 10px; }
+  .green-box p:last-child {
+    margin-bottom: 0; }
 
 .left-side .event-block {
   float: right; }
