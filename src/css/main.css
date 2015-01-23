@@ -398,14 +398,14 @@ footer {
   display: inline-block;
   margin-left: 20px;
   width: 200px; }
-  .full-page .race-details h5 {
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: capitalize; }
-  .full-page .race-details p {
-    font-size: 14px;
-    font-weight: 200;
-    margin-bottom: 15px; }
+.full-page h5 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize; }
+.full-page p {
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 15px; }
 .full-page .button-wrapper img {
   cursor: pointer;
   margin-left: 10px;
@@ -413,6 +413,7 @@ footer {
   width: 125px; }
 .full-page .button-wrapper p {
   display: inline-block;
+  margin-bottom: 0;
   vertical-align: middle; }
 .full-page .button-wrapper i {
   padding-top: 4px;
