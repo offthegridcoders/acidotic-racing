@@ -4,8 +4,8 @@
 html, body {
   font-family: 'Lato', sans-serif;
   margin: 0;
-  padding: 0;
   max-width: 100%;
+  padding: 0;
   width: 100%; }
 
 ul, li, p, h1, h2, h3, h4, h5, h6, form {
@@ -509,16 +509,16 @@ footer {
     bottom: 0;
     color: rgba(0, 0, 0, 0.52);
     cursor: pointer;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d999999',  endColorstr='#00ffffff',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d999999', endColorstr='#00ffffff', GradientType=1);
     font-size: 14px;
     padding: 4px 20px 20px 4px;
     position: absolute;
     right: 0;
     transition: padding .4s ease;
     width: auto; }
-    .full-page .race-image i:hover {
-      padding: 8px 23px 23px 8px;
-      transition: padding .4s ease; }
+  .full-page .race-image i:hover {
+    padding: 8px 23px 23px 8px;
+    transition: padding .4s ease; }
 .full-page .race-details {
   display: inline-block;
   margin-left: 20px;
@@ -596,7 +596,7 @@ footer {
     color: #fff;
     font-size: 18px; }
 .current-results i {
-  background-color: #2A200F;
+  background-color: #2a200f;
   color: #fcb034;
   float: right;
   font-size: 23px;
