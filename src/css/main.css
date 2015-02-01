@@ -293,6 +293,17 @@ footer {
   .brown-box p:last-child {
     margin-bottom: 0; }
 
+.official-sponsor {
+  margin-left: 40%; }
+  .official-sponsor img {
+    float: left; }
+  .official-sponsor p span {
+    font-size: 24px; }
+  .official-sponsor button {
+    background-color: #fcb034;
+    border: solid 1px #e08c03;
+    padding: 15px 25px; }
+
 .left-side .event-block {
   float: right; }
 

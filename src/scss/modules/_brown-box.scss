@@ -28,3 +28,23 @@
     margin-bottom: 0;
   }
 }
+
+.official-sponsor {
+  margin-left: 40%;
+
+  img {
+    float: left;
+  }
+
+  p {
+    span {
+      font-size: 24px;
+    }
+  }
+
+  button {
+    background-color: $orange;
+    border: solid 1px darken($orange, 15%);
+    padding: 15px 25px;
+  }
+}
