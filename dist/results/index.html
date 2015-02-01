@@ -1,58 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>acidotic Racing - Race Results</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <base href="http://thewickedwebdev.github.io/acidotic-racing/dist/">
-  <!--<base href="file:///Users/stephenyoung/Documents/acidotic-racing/dist/">-->
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  
-  <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
-
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- jQuery -->
-  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-</head>
-
+  @@include('../partials/_head.html', {"title": "acidotic Racing - Race Results"})
   <body class="fall-page">
-    <nav>
-  <ul class="animated fadeInDownBig">
-    <li><a href="events/winter">events</a></li>
-    <li><a href="results">results</a></li>
-    <li><a href="photos">photos</a></li>
-    <li><a href="why-acidotic">why <span>acidotic<span></a></li>
-    <li><a href="contact">contact</a></li>
-  </ul>
-</nav>
-    <header class="results-header">
-  <img class="logo" src="assets/logo.png">
-  <ul class="season-icons-list">
-    <li>
-      <a href="events/winter"><img src="assets/icons/winter_icon.jpg"></a>
-      <a href="events/winter"><img src="assets/icons/winter_icon_orange.jpg"></a>
-    </li>
-    <li>
-      <a href="events/spring"><img src="assets/icons/spring_icon.jpg"></a>
-      <a href="events/spring"><img src="assets/icons/spring_icon_orange.jpg"></a>
-    </li>
-    <li>
-      <a href="events/summer"><img src="assets/icons/summer_icon.jpg"></a>
-      <a href="events/summer"><img src="assets/icons/summer_icon_orange.jpg"></a>
-    </li>
-    <li>
-      <a href="events/fall"><img src="assets/icons/fall_icon.jpg"></a>
-      <a href="events/fall"><img src="assets/icons/fall_icon_orange.jpg"></a>
-    </li>
-  </ul>
-</header>
+    @@include('../partials/_nav.html')
+    @@include('../partials/_header.html', {"class": "results-header"})
     <section class="left-side wow animated fadeInLeftBig">
       <h1 class="main-header">2015 RACE<span>results</span></h1>
       <article class="brown-box official-sponsor">
@@ -206,112 +157,8 @@
       </article>
     </section>
 
-    <footer>
-  <div class="event-links">
-    <ul>
-      <li>winter events</li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-    </ul>
-    <ul>
-      <li>spring events</li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-    </ul>
-    <ul>
-      <li>summer events</li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-    </ul>
-    <ul>
-      <li>fall events</li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="#">Sidehiller Snowshoe Race<a></p>
-      </li>
-    </ul>
-  </div>
-  <div class="sponsor-links">
-    <h3>our sponsors</h3>
-    <ul>
-      <li><a href="#" target="_blank"><img src="assets/sponsors/01.jpg"></a></li>
-      <li><a href="#" target="_blank"><img src="assets/sponsors/02.png"></a></li>
-      <li><a href="#" target="_blank"><img src="assets/sponsors/03.jpg"></a></li>
-      <li><a href="#" target="_blank"><img src="assets/sponsors/04.jpg"></a></li>
-      <li><a href="#" target="_blank"><img src="assets/sponsors/05.jpg"></a></li>
-      <li><a href="#" target="_blank"><img src="assets/sponsors/06.jpg"></a></li>
-      <li><a href="#" target="_blank"><img src="assets/sponsors/07.jpg"></a></li>
-      <li><a href="#" target="_blank"><img src="assets/sponsors/08.jpg"></a></li>
-      <li><a href="#" target="_blank"><img src="assets/sponsors/09.jpg"></a></li>
-      <li><a href="#" target="_blank"><img src="assets/sponsors/10.jpg"></a></li>
-    </ul>
-  </div>
-  <div class="social-footer-links">
-    <ul>
-      <li><img src="assets/icons/sm_facebook.jpg"></li>
-      <li><img src="assets/icons/sm_twitter.jpg"></li>
-      <li><img src="assets/icons/sm_instagram.png"></li>
-      <li><img src="assets/icons/sm_youtube.png"></li>
-    </ul>
-    <p>&copy; 2014 acidotic RACING, LLC<p>
-    <p>Website design and development by Stephen Young</p>
-  </div>
-</footer>
+    @@include('../partials/_footer.html')
 
-    <script src="js/scripts.js"></script>
+    @@include('../partials/_scripts.html')
   </body>
 </html>
