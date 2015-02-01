@@ -593,23 +593,26 @@ footer {
 .current-results li {
   margin-bottom: 10px; }
   .current-results li p:first-child {
-    color: #fff; }
-.current-results p:first-child {
-  color: #fff; }
+    color: #fff;
+    font-size: 18px; }
 .current-results i {
+  background-color: #2A200F;
   color: #fcb034;
-  font-size: 23px;
   float: right;
-  padding: 5px;
-  background-color: #2A200F; }
+  font-size: 23px;
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 5px; }
 
 .past-results li {
   margin-bottom: 10px; }
-.past-results p:first-child {
-  color: #fff; }
+  .past-results li p:first-child {
+    color: #fff; }
 .past-results i {
+  background-color: #252525;
   color: #ccc;
   float: left;
-  padding: 10px 5px 5px;
   font-size: 18px;
-  width: 36px; }
+  margin-right: 10px;
+  margin-top: 6px;
+  padding: 5px; }
