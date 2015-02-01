@@ -387,6 +387,12 @@ footer {
 .exeter-trail {
   background-image: url('../assets/events/event_exetertrail.jpg'); }
 
+.loon-mountain {
+  background-image: url('../assets/events/event_lmr.jpg'); }
+
+.kingmanfarm-race {
+  background-image: url('../assets/events/event_kingmanfarm.jpg'); }
+
 .winter-page .values-block, .fall-page .values-block {
   margin: 60px 0; }
   .winter-page .values-block p, .fall-page .values-block p {
