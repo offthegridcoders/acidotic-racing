@@ -296,16 +296,22 @@ footer {
 .official-sponsor {
   margin-left: 40% !important; }
   .official-sponsor img {
-    float: left;
-    width: 100px; }
-  .official-sponsor p span {
-    color: #fff;
-    font-size: 24px; }
+    float: right;
+    max-height: 90px;
+    max-width: 100px;
+    margin-left: 20px; }
+  .official-sponsor p {
+    color: #4d3815; }
+    .official-sponsor p span {
+      color: #fff;
+      font-size: 24px; }
   .official-sponsor button {
-    background-color: #b7824b;
-    border: solid 1px #704f2d;
-    color: #fff;
-    padding: 15px 25px; }
+    background-color: #6f5325;
+    border: 1px solid #382511;
+    color: #9d917d;
+    font-size: 9px;
+    padding: 9px 14px;
+    text-transform: uppercase; }
 
 .left-side .event-block {
   float: right; }
