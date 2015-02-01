@@ -1,5 +1,4 @@
-.winter-page,
-.fall-page {
+.winter-page {
   .values-block {
     margin: 60px 0;
     
@@ -34,6 +33,25 @@
 
     p:nth-child(odd) {
       color: $light-green;
+    }
+  }
+}
+
+.fall-page {
+  .values-block {
+    margin: 60px 0;
+    
+    p {
+      color: $light-brown;
+      font-family: Tahoma, Geneva, sans-serif;
+      font-size: 50px;
+      font-weight: 600;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      text-transform: uppercase;
+    }
+
+    p:nth-child(odd) {
+      color: $light-gold;
     }
   }
 }

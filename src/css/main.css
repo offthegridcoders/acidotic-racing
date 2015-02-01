@@ -403,16 +403,16 @@ footer {
 .bretton-woods {
   background-image: url('../assets/events/event_brettonwoods.jpg'); }
 
-.winter-page .values-block, .fall-page .values-block {
+.winter-page .values-block {
   margin: 60px 0; }
-  .winter-page .values-block p, .fall-page .values-block p {
+  .winter-page .values-block p {
     color: #92a8f5;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 50px;
     font-weight: 600;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-transform: uppercase; }
-  .winter-page .values-block p:nth-child(odd), .fall-page .values-block p:nth-child(odd) {
+  .winter-page .values-block p:nth-child(odd) {
     color: #c9d5eb; }
 
 .summer-page .values-block, .spring-page .values-block {
@@ -426,6 +426,18 @@ footer {
     text-transform: uppercase; }
   .summer-page .values-block p:nth-child(odd), .spring-page .values-block p:nth-child(odd) {
     color: #caef58; }
+
+.fall-page .values-block {
+  margin: 60px 0; }
+  .fall-page .values-block p {
+    color: #cda882;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-transform: uppercase; }
+  .fall-page .values-block p:nth-child(odd) {
+    color: #e6c88a; }
 
 .full-page i {
   width: 25px; }
