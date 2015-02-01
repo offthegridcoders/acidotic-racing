@@ -591,7 +591,7 @@ footer {
   max-width: 100%; }
 
 .current-results li {
-  margin-bottom: 10px; }
+  margin-bottom: 30px; }
 .current-results .title {
   color: #fff;
   font-size: 18px; }
@@ -605,7 +605,7 @@ footer {
   padding: 5px; }
 
 .past-results li {
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
 .past-results .title {
   color: #fff; }
 .past-results i {
