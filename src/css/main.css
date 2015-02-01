@@ -592,13 +592,15 @@ footer {
 
 .current-results li {
   margin-bottom: 10px; }
-  .current-results li p:first-child {
-    color: #fff; }
+.current-results p:first-child {
+  color: #fff; }
 .current-results i {
   color: #fcb034;
   font-size: 23px;
   padding: 5px;
   background-color: #2A200F; }
 
+.past-results p:first-child {
+  color: #fff; }
 .past-results i {
   color: #ccc; }
