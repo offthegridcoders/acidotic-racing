@@ -2,7 +2,7 @@
   li {
     margin-bottom: 10px;
 
-    p:first-child {
+    p:nth-child(1) {
       color: #fff;
       font-size: 18px;
     }
@@ -23,7 +23,7 @@
   li {
     margin-bottom: 10px;
 
-    p:first-child {
+    p:nth-child(1) {
       color: #fff;
     }
   }
