@@ -604,6 +604,11 @@ footer {
   margin-top: 5px;
   padding: 5px; }
 
+.past-results summary {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 10px; }
 .past-results li {
   margin-bottom: 20px; }
 .past-results .title {

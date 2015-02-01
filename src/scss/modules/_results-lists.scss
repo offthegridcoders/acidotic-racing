@@ -20,6 +20,14 @@
 }
 
 .past-results {
+
+  summary {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
   li {
     margin-bottom: 20px;
   }
