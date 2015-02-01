@@ -590,10 +590,15 @@ footer {
   margin-top: 15px;
   max-width: 100%; }
 
-.current-results ul p:first-child {
-  color: #fff; }
+.current-results li {
+  margin-bottom: 10px; }
+  .current-results li p:first-child {
+    color: #fff; }
 .current-results i {
-  color: #fcb034; }
+  color: #fcb034;
+  font-size: 23px;
+  padding: 5px;
+  background-color: #2A200F; }
 
-.past-results ul i {
+.past-results i {
   color: #ccc; }

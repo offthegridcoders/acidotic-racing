@@ -1,19 +1,22 @@
 .current-results {
-  ul {
-    p:first-child{
+  li {
+    margin-bottom: 10px;
+
+    p:first-child {
       color: #fff;
     }
   }
 
   i {
     color: $orange;
+    font-size: 23px;
+    padding: 5px;
+    background-color: #2A200F;
   }
 }
 
 .past-results {
-  ul {
-    i {
-      color: #ccc;
-    }
+  i {
+    color: #ccc;
   }
 }
