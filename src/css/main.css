@@ -443,6 +443,16 @@ footer {
   .fall-page .values-block p:nth-child(odd) {
     color: #e6c88a; }
 
+.archive-header {
+  margin: 20px 0; }
+  .archive-header p {
+    color: #cda882;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-transform: uppercase; }
+
 .full-page i {
   width: 25px; }
 .full-page h4 {
@@ -606,9 +616,10 @@ footer {
 
 .past-results summary {
   color: #fff;
-  font-size: 20px;
   cursor: pointer;
-  margin-bottom: 10px; }
+  font-size: 20px;
+  margin-bottom: 10px;
+  outline: none; }
 .past-results li {
   margin-bottom: 20px; }
 .past-results .title {
