@@ -296,13 +296,14 @@ footer {
 .official-sponsor {
   margin-left: 40% !important; }
   .official-sponsor img {
-    float: left; }
+    float: left;
+    width: 100px; }
   .official-sponsor p span {
     color: #fff;
     font-size: 24px; }
   .official-sponsor button {
-    background-color: #cda882;
-    border: solid 1px #b7824b;
+    background-color: #b7824b;
+    border: solid 1px #704f2d;
     color: #fff;
     padding: 15px 25px; }
 

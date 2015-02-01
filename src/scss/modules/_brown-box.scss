@@ -34,6 +34,7 @@
 
   img {
     float: left;
+    width: 100px;
   }
 
   p {
@@ -44,8 +45,8 @@
   }
 
   button {
-    background-color: $light-brown;
-    border: solid 1px darken($light-brown, 15%);
+    background-color: darken($light-brown, 15%);
+    border: solid 1px darken($light-brown, 35%);
     color: #fff;
     padding: 15px 25px;
   }
