@@ -398,10 +398,14 @@ footer {
   background-image: url('../assets/events/event_vulcansfury.jpg'); }
 
 .roaring-falls {
-  background-image: url('../assets/events/event-roaring-falls.jpg'); }
+  background-image: url('../assets/events/event-roaring-falls.jpg');
+  background-position: 50% 40%; }
 
 .bretton-woods {
   background-image: url('../assets/events/event_brettonwoods.jpg'); }
+
+.results-event {
+  background-image: url('../assets/events/event_results.jpg'); }
 
 .winter-page .values-block {
   margin: 60px 0; }
