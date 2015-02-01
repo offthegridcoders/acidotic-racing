@@ -620,6 +620,9 @@ footer {
   margin-top: 15px;
   max-width: 100%; }
 
+.winter-advisory h5, .winter-advisory p {
+  color: #f00; }
+
 .current-results li {
   margin-bottom: 30px; }
 .current-results .title {
