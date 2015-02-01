@@ -394,6 +394,15 @@ footer {
 .kingmanfarm-race {
   background-image: url('../assets/events/event_kingmanfarm.jpg'); }
 
+.vulcan-fury {
+  background-image: url('../assets/events/event_vulcansfury.jpg'); }
+
+.roaring-falls {
+  background-image: url('../assets/events/event-roaring-falls.jpg'); }
+
+.bretton-woods {
+  background-image: url('../assets/events/event_brettonwoods.jpg'); }
+
 .winter-page .values-block, .fall-page .values-block {
   margin: 60px 0; }
   .winter-page .values-block p, .fall-page .values-block p {
