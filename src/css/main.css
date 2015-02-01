@@ -589,3 +589,11 @@ footer {
 .full-page .course-map {
   margin-top: 15px;
   max-width: 100%; }
+
+.current-results ul p:first-child {
+  color: #fff; }
+.current-results i {
+  color: #fcb034; }
+
+.past-results ul i {
+  color: #ccc; }

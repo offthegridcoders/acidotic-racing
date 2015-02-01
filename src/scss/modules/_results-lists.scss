@@ -1,0 +1,19 @@
+.current-results {
+  ul {
+    p:first-child{
+      color: #fff;
+    }
+  }
+
+  i {
+    color: $orange;
+  }
+}
+
+.past-results {
+  ul {
+    i {
+      color: #ccc;
+    }
+  }
+}
