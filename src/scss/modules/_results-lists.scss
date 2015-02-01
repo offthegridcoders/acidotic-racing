@@ -1,11 +1,11 @@
 .current-results {
   li {
     margin-bottom: 10px;
-
-    p:nth-child(1) {
-      color: #fff;
-      font-size: 18px;
-    }
+  }
+  
+  .title {
+    color: #fff;
+    font-size: 18px;
   }
 
   i {
@@ -22,10 +22,10 @@
 .past-results {
   li {
     margin-bottom: 10px;
-
-    p:nth-child(1) {
-      color: #fff;
-    }
+  }
+  
+  .title {
+    color: #fff;
   }
 
   i {

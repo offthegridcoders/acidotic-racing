@@ -592,9 +592,9 @@ footer {
 
 .current-results li {
   margin-bottom: 10px; }
-  .current-results li p:nth-child(1) {
-    color: #fff;
-    font-size: 18px; }
+.current-results .title {
+  color: #fff;
+  font-size: 18px; }
 .current-results i {
   background-color: #2a200f;
   color: #fcb034;
@@ -606,8 +606,8 @@ footer {
 
 .past-results li {
   margin-bottom: 10px; }
-  .past-results li p:nth-child(1) {
-    color: #fff; }
+.past-results .title {
+  color: #fff; }
 .past-results i {
   background-color: #252525;
   color: #ccc;
