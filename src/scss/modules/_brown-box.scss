@@ -1,0 +1,30 @@
+.left-side {
+  .brown-box {
+    margin-left: 20%;
+  }
+}
+
+.right-side {
+  .brown-box {
+    margin-right: 20%;
+  }
+}
+
+.brown-box {
+  background-image: url('../assets/tiles/brown-box.jpg');
+  box-shadow: 3px 3px 20px #000;
+  display: block;
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 20px;
+  padding: 35px;
+
+  p {
+    color: #fff;
+  margin-bottom: 10px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -272,6 +272,26 @@ footer {
   .green-box p:last-child {
     margin-bottom: 0; }
 
+.left-side .brown-box {
+  margin-left: 20%; }
+
+.right-side .brown-box {
+  margin-right: 20%; }
+
+.brown-box {
+  background-image: url('../assets/tiles/brown-box.jpg');
+  box-shadow: 3px 3px 20px #000;
+  display: block;
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 20px;
+  padding: 35px; }
+  .brown-box p {
+    color: #fff;
+    margin-bottom: 10px; }
+  .brown-box p:last-child {
+    margin-bottom: 0; }
+
 .left-side .event-block {
   float: right; }
 
@@ -360,6 +380,12 @@ footer {
 
 .why-event {
   background-image: url('../assets/events/why-acidotic-01.jpg'); }
+
+.ralph-waldo {
+  background-image: url('../assets/events/event_ralphwaldo.jpg'); }
+
+.exeter-trail {
+  background-image: url('../assets/events/event_ralphwaldo.jpg'); }
 
 .winter-page .values-block, .fall-page .values-block {
   margin: 60px 0; }
