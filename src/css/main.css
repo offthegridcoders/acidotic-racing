@@ -298,9 +298,9 @@ footer {
   .official-sponsor img {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.42);
     float: right;
+    margin-left: 20px;
     max-height: 90px;
-    max-width: 100px;
-    margin-left: 20px; }
+    max-width: 100px; }
   .official-sponsor p {
     color: #4d3815; }
     .official-sponsor p span {
