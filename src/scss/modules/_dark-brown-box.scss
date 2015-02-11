@@ -1,0 +1,25 @@
+.left-side {
+  .dark-brown-box {
+    margin-left: 20%;
+  }
+}
+
+.right-side {
+  .dark-brown-box {
+    margin-right: 20%;
+  }
+}
+
+.dark-brown-box {
+  background-image: url('../assets/tiles/dark-brown-box.jpg');
+  box-shadow: 3px 3px 20px #000;
+  display: block;
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 20px;
+  padding: 35px;
+
+  img {
+    width: 100%;
+  }
+}
