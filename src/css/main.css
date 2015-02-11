@@ -156,7 +156,8 @@ header {
   background-image: url('../assets/headers/results-header.png'); }
 
 .photos-header {
-  background-image: url('../assets/headers/photos-header.png'); }
+  background-image: url('../assets/headers/photos-header.png');
+  background-position: 100%; }
 
 .why-header {
   background-image: url('../assets/headers/why-header.png'); }
