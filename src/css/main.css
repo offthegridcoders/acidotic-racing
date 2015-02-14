@@ -192,50 +192,50 @@ header {
     margin-bottom: 25px; }
 
 .winter-header {
-  background-image: url('../assets/headers/winter-header-med.png'); }
+  background-image: url('../assets/headers/winter-header.png'); }
   @media screen and (max-width: 500px) {
     .winter-header {
       background-image: url('../assets/headers/winter-header-sm.png'); } }
 
 .spring-header {
-  background-image: url('../assets/headers/spring-header-med.png'); }
+  background-image: url('../assets/headers/spring-header.png'); }
   @media screen and (max-width: 500px) {
     .spring-header {
       background-image: url('../assets/headers/spring-header-sm.png'); } }
 
 .summer-header {
-  background-image: url('../assets/headers/summer-header-med.png'); }
+  background-image: url('../assets/headers/summer-header.png'); }
   @media screen and (max-width: 500px) {
     .summer-header {
       background-image: url('../assets/headers/summer-header-sm.png'); } }
 
 .fall-header {
-  background-image: url('../assets/headers/fall-header-med.png'); }
+  background-image: url('../assets/headers/fall-header.png'); }
   @media screen and (max-width: 500px) {
     .fall-header {
       background-image: url('../assets/headers/fall-header-sm.png'); } }
 
 .results-header {
-  background-image: url('../assets/headers/results-header-med.png'); }
+  background-image: url('../assets/headers/results-header.png'); }
   @media screen and (max-width: 500px) {
     .results-header {
       background-image: url('../assets/headers/results-header-sm.png'); } }
 
 .photos-header {
-  background-image: url('../assets/headers/photos-header-med.png');
+  background-image: url('../assets/headers/photos-header.png');
   background-position: 100%; }
   @media screen and (max-width: 500px) {
     .photos-header {
       background-image: url('../assets/headers/photos-header-sm.png'); } }
 
 .why-header {
-  background-image: url('../assets/headers/why-header-med.png'); }
+  background-image: url('../assets/headers/why-header.png'); }
   @media screen and (max-width: 500px) {
     .why-header {
       background-image: url('../assets/headers/why-header-sm.png'); } }
 
 .contact-header {
-  background-image: url('../assets/headers/contact-header-med.png'); }
+  background-image: url('../assets/headers/contact-header.png'); }
   @media screen and (max-width: 500px) {
     .contact-header {
       background-image: url('../assets/headers/contact-header-sm.png'); } }
