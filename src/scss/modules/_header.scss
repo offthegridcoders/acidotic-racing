@@ -10,6 +10,10 @@ header {
 
   img {
     margin-bottom: 25px;
+
+    @media screen and (max-width: 650px) {
+      width: 200px;
+    }
   }
 }
 

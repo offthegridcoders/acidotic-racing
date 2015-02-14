@@ -190,6 +190,9 @@ header {
   width: 100%; }
   header img {
     margin-bottom: 25px; }
+    @media screen and (max-width: 650px) {
+      header img {
+        width: 200px; } }
 
 .winter-header {
   background-image: url('../assets/headers/winter-header.png'); }
@@ -503,6 +506,7 @@ footer {
       width: 450px; } }
   @media screen and (max-width: 800px) {
     .event-block {
+      max-width: 450px;
       width: 95%; } }
   .event-block img {
     left: 0;
