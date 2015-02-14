@@ -23,7 +23,7 @@ var paths = {
 gulp.task('default', ['build', 'clean-up'], function() {});
 
 // Makes Distribution folder with all files minified
-gulp.task('build', ['sass', 'clean', 'useref', 'img-min'], function() {
+gulp.task('build', ['sass', 'clear', 'useref', 'img-min'], function() {
   return gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
@@ -46,7 +46,7 @@ gulp.task('useref', ['fileinclude'], function () {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('img-min', ['clean'], function () {
+gulp.task('img-min', ['clear'], function () {
   return gulp.src(paths.assets)
     .pipe(imagemin({
         progressive: true,
@@ -56,7 +56,7 @@ gulp.task('img-min', ['clean'], function () {
     .pipe(gulp.dest('./dist/assets'));
 });
 
-gulp.task('img-copy', ['clean'], function() {
+gulp.task('img-copy', ['clear'], function() {
   return gulp.src(paths.assets)
   // Perform minification tasks, etc here
   .pipe(gulp.dest('./dist/assets'));
@@ -67,7 +67,7 @@ gulp.task('lint', function() {
     .pipe(scsslint());
 });
 
-gulp.task('clean', ['sass'], function () {
+gulp.task('clear', ['sass'], function () {
   return gulp.src('dist', {read: false})
     .pipe(clean());
 });
@@ -81,7 +81,7 @@ gulp.task('clean-up', ['build'], function() {
     .pipe(clean());
 });
 
-gulp.task('fileinclude', ['clean'], function() {
+gulp.task('fileinclude', ['clear'], function() {
   return gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
