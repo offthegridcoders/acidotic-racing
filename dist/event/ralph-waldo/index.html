@@ -1,37 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ralph Waldo Emerson Trail Race - acidotic Racing</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <base href="http://thewickedwebdev.github.io/acidotic-racing/dist/">
-  <!-- <base href="file:///Users/stephenyoung/Documents/acidotic-racing/dist/"> -->
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  
-  <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
-
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- jQuery -->
-  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-</head>
-
+  @@include('../../partials/_head.html', {"title": "Ralph Waldo Emerson Trail Race - acidotic Racing"})
   <body class="spring-page">
-    <nav>
-  <ul class="animated fadeInDownBig">
-    <li><a href="events/winter">events</a></li>
-    <li><a href="results">results</a></li>
-    <li><a href="photos">photos</a></li>
-    <li><a href="why-acidotic">why <span>acidotic<span></a></li>
-    <li><a href="contact">contact</a></li>
-  </ul>
-</nav>
+    @@include('../../partials/_nav.html')
 
     <section class="full-page">
       <div class="logo">
@@ -101,108 +72,8 @@
       </article>
     </section>
 
-    <footer>
-  <div class="event-links">
-    <ul>
-      <li class="event-season-header"><a href="events/winter">winter events<a/></li>
-      <li>
-        <span>January 25th, 2015</span>
-        <p><a href="event/sidehiller-snowshoe/">Sidehiller Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>February 28, 2015</span>
-        <p><a href="event/kingman-farm/">Kingman Farm Moonlight Snowshoe Race<a></p>
-      </li>
-      <li>
-        <span>February 21, 2015</span>
-        <p><a href="event/snowshoe-hullabaloo/">Exeter Snowshoe Hullabaloo<a></p>
-      </li>
-      <li>
-        <span>March 7, 2015</span>
-        <p><a href="event/snowshoe-championship/">NH &amp; Northeast Snowshoe Championship<a></p>
-      </li>
-    </ul>
-    <ul>
-      <li class="event-season-header"><a href="events/spring">spring events</a></li>
-      <li>
-        <span>May 2nd, 2015</span>
-        <p><a href="event/ralph-waldo/">Ralph Waldo Emerson Trail Race<a></p>
-      </li>
-      <li>
-        <span>June 27, 2015</span>
-        <p><a href="event/exeter-trail/">Exeter Trail Race<a></p>
-      </li>
-    </ul>
-    <ul>
-      <li class="event-season-header"><a href="events/summer">summer events</a></li>
-      <li>
-        <span>July 5, 2015</span>
-        <p><a href="event/loon-mountain-race/">Loon Mountain Race<a></p>
-      </li>
-      <li>
-        <span>August 1, 2015</span>
-        <p><a href="event/kingman-farm-trail-race/">Kingman Farm Trail Race<a></p>
-      </li>
-    </ul>
-    <ul>
-      <li class="event-season-header"><a href="events/fall">fall events</a></li>
-      <li>
-        <span>October 3, 2015</span>
-        <p><a href="event/bretton-woods/">Bretton Woods Fell Race<a></p>
-      </li>
-      <li>
-        <span>October 17, 2015</span>
-        <p><a href="event/vulcans-fury/">Vulcan's Fury Trail Race<a></p>
-      </li>
-      <li>
-        <span>November 7, 2015</span>
-        <p><a href="event/roaring-falls/">Roaring Falls Trail Race<a></p>
-      </li>
-    </ul>
-  </div>
-  <div class="sponsor-links">
-    <h3>our sponsors</h3>
-    <ul>
-      <li><a href="http://www.dionsnowshoes.com/" target="_blank"><img src="assets/sponsors/01.jpg"></a></li>
-      <li><a href="http://www.salomon.com/us/" target="_blank"><img src="assets/sponsors/02.png"></a></li>
-      <li><a href="http://www.philbricks.com/" target="_blank"><img src="assets/sponsors/03.jpg"></a></li>
-      <li><a href="http://www.nhstateparks.org/" target="_blank"><img src="assets/sponsors/04.jpg"></a></li>
-      <li><a href="http://www.julbousa.com/" target="_blank"><img src="assets/sponsors/05.jpg"></a></li>
-      <li><a href="http://www.603brewery.com/" target="_blank"><img src="assets/sponsors/06.jpg"></a></li>
-      <li><a href="http://www.suunto.com/en-US/" target="_blank"><img src="assets/sponsors/07.jpg"></a></li>
-      <li><a href="http://www.petzl.com/us" target="_blank"><img src="assets/sponsors/08.jpg"></a></li>
-      <li><a href="http://www.smartwool.com/" target="_blank"><img src="assets/sponsors/09.jpg"></a></li>
-      <li><a href="http://www.sevensunscoffee.com/" target="_blank"><img src="assets/sponsors/10.jpg"></a></li>
-    </ul>
-  </div>
-  <div class="social-footer-links">
-    <ul>
-      <li>
-        <a href="https://www.facebook.com/pages/acidotic-RACING/117524208265808" target="_blank">
-          <img src="assets/icons/sm_facebook.jpg">
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/acidoticracing/" target="_blank">
-          <img src="assets/icons/sm_twitter.jpg">
-        </a>
-      </li>
-      <li>
-        <a href="http://instagram.com/acidoticracing" target="_blank">
-          <img src="assets/icons/sm_instagram.png">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/user/ChrisJDunn" target="_blank">
-          <img src="assets/icons/sm_youtube.png">
-        </a>
-      </li>
-    </ul>
-    <p>&copy; 2014 acidotic RACING, LLC<p>
-    <p>Website design and development by <a href="https://github.com/theWickedWebDev" target="_blank">Stephen Young</a></p>
-  </div>
-</footer>
+    @@include('../../partials/_footer.html')
 
-    <script src="js/scripts.js"></script>
+    @@include('../../partials/_scripts.html')
   </body>
 </html>

@@ -25,6 +25,12 @@ gulp.task('default', ['sass', 'clean', 'useref', 'img-min'], function() {
   gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
+  gulp.src([
+    'src/css/defaults',
+    'src/css/layout/',
+    'src/css/modules/',
+    'dist/partials/'], {read: false})
+    .pipe(clean());
 });
 
 gulp.task('sass', ['lint'], function () {
