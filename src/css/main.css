@@ -46,15 +46,33 @@ a {
   display: inline-block;
   margin: 500px 1% 50px;
   padding: 20px 0;
+  position: relative;
   vertical-align: top;
   width: 47%; }
+  @media screen and (max-width: 800px) {
+    .left-side, .right-side {
+      margin: 430px auto 0;
+      padding: 0;
+      width: 100%; } }
 
 .left-side {
   text-align: right; }
+  @media screen and (max-width: 800px) {
+    .left-side {
+      text-align: center; } }
+  @media screen and (max-width: 500px) {
+    .left-side {
+      margin-top: 500px;
+      text-align: center; } }
 
 .right-side {
   padding-top: 20px;
   text-align: left; }
+  @media screen and (max-width: 800px) {
+    .right-side {
+      margin: 0 auto;
+      padding: 0;
+      text-align: center; } }
 
 .full-page {
   background-color: #fff;
@@ -74,6 +92,9 @@ article {
   margin-bottom: 60px;
   text-shadow: 5px 5px 5px #000;
   text-transform: uppercase; }
+  @media screen and (max-width: 400px) {
+    .main-header {
+      font-size: 60px; } }
   .main-header span {
     color: #fff;
     display: block;
@@ -88,6 +109,9 @@ article {
   padding: 10px; }
   .season-icons-list li a:nth-child(2) {
     display: none; }
+  @media screen and (max-width: 350px) {
+    .season-icons-list li {
+      padding: 6px; } }
 .season-icons-list li:hover a:first-child {
   display: none; }
 .season-icons-list li:hover a:nth-child(2) {
@@ -96,6 +120,9 @@ article {
   cursor: pointer;
   opacity: .9;
   width: 70px; }
+  @media screen and (max-width: 350px) {
+    .season-icons-list img {
+      width: 60px; } }
 
 nav {
   background: transparent;
@@ -120,11 +147,29 @@ nav {
     text-transform: uppercase; }
     nav li:last-child {
       border: 0; }
+    @media screen and (max-width: 700px) {
+      nav li {
+        padding: 10px 20px; } }
+    @media screen and (max-width: 500px) {
+      nav li {
+        padding: 5px 15px; }
+        nav li:first-child {
+          display: none; } }
+    @media screen and (max-width: 350px) {
+      nav li {
+        margin-top: 12px;
+        padding: 0 7px; } }
   nav a {
     color: #fff;
     font-size: 15px; }
     nav a:hover {
       color: #fcb034; }
+    @media screen and (max-width: 600px) {
+      nav a {
+        font-size: 13px; } }
+    @media screen and (max-width: 550px) {
+      nav a {
+        font-size: 12px; } }
   nav span {
     text-transform: lowercase; }
 
@@ -198,22 +243,40 @@ footer {
     text-align: left;
     vertical-align: top;
     width: 230px; }
+    @media screen and (max-width: 1000px) {
+      .event-links ul {
+        width: 220px; } }
+    @media screen and (max-width: 950px) {
+      .event-links ul {
+        width: 200px; } }
+    @media screen and (max-width: 850px) {
+      .event-links ul {
+        width: 185px; } }
+    @media screen and (max-width: 800px) {
+      .event-links ul {
+        text-align: center;
+        width: 400px; } }
+    @media screen and (max-width: 400px) {
+      .event-links ul {
+        width: 95%; } }
   .event-links li {
     background-color: transparent;
     display: block;
     margin: 8px 5px;
     padding: 5px;
     transition: background-color .3s ease; }
-  .event-links li:hover {
-    background-color: #000;
-    transition: background-color .3s ease; }
-    .event-links li:hover a {
-      color: #fcb034; }
+    .event-links li:hover {
+      background-color: #000;
+      transition: background-color .3s ease; }
+      .event-links li:hover a {
+        color: #fcb034; }
   .event-links li:first-child {
     color: #fcb034;
     font-size: 20px;
     margin-bottom: 15px;
     text-transform: uppercase; }
+    .event-links li:first-child:hover {
+      background-color: transparent; }
 
 .sponsor-links {
   background: #fff;
@@ -234,9 +297,17 @@ footer {
 
 .left-side .blue-box {
   margin-left: 20%; }
+  @media screen and (max-width: 800px) {
+    .left-side .blue-box {
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 .right-side .blue-box {
   margin-right: 20%; }
+  @media screen and (max-width: 800px) {
+    .right-side .blue-box {
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 .blue-box {
   background-image: url('../assets/tiles/blue-box.jpg');
@@ -254,9 +325,17 @@ footer {
 
 .left-side .green-box {
   margin-left: 25%; }
+  @media screen and (max-width: 800px) {
+    .left-side .green-box {
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 .right-side .green-box {
   margin-right: 25%; }
+  @media screen and (max-width: 800px) {
+    .right-side .green-box {
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 .green-box {
   background-image: url('../assets/tiles/green-box.jpg');
@@ -277,9 +356,17 @@ footer {
 
 .left-side .brown-box {
   margin-left: 20%; }
+  @media screen and (max-width: 800px) {
+    .left-side .brown-box {
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 .right-side .brown-box {
   margin-right: 20%; }
+  @media screen and (max-width: 800px) {
+    .right-side .brown-box {
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 .brown-box {
   background-image: url('../assets/tiles/brown-box.jpg');
@@ -337,9 +424,15 @@ footer {
 
 .left-side .event-block {
   float: right; }
+  @media screen and (max-width: 800px) {
+    .left-side .event-block {
+      float: none; } }
 
 .right-side .event-block {
   left: 0; }
+  @media screen and (max-width: 800px) {
+    .right-side .event-block:first-child {
+      margin-top: 0; } }
 
 .event-block {
   background-repeat: no-repeat;
@@ -348,6 +441,22 @@ footer {
   height: 400px;
   position: relative;
   width: 450px; }
+  @media screen and (max-width: 950px) {
+    .event-block {
+      height: 360px;
+      width: 400px; } }
+  @media screen and (max-width: 850px) {
+    .event-block {
+      height: 360px;
+      width: 370px; } }
+  @media screen and (max-width: 800px) {
+    .event-block {
+      height: 400px;
+      margin: 25px auto;
+      width: 450px; } }
+  @media screen and (max-width: 800px) {
+    .event-block {
+      width: 95%; } }
   .event-block img {
     left: 0;
     margin: 5px;
@@ -417,6 +526,16 @@ footer {
     font-size: 30px;
     margin-bottom: 50px;
     margin-top: 50px; }
+    @media screen and (max-width: 950px) {
+      .suunto h2 {
+        margin-top: 0; } }
+    @media screen and (max-width: 400px) {
+      .suunto h2 {
+        font-size: 20px;
+        margin-top: 30px; } }
+  @media screen and (max-width: 400px) {
+    .suunto h3 {
+      font-size: 16px; } }
 
 .contact-event {
   background-image: url('../assets/events/contact_event.jpg'); }
@@ -458,6 +577,9 @@ footer {
     font-weight: 600;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-transform: uppercase; }
+    @media screen and (max-width: 400px) {
+      .winter-page .values-block p {
+        font-size: 36px; } }
   .winter-page .values-block p:nth-child(odd) {
     color: #c9d5eb; }
 
@@ -470,6 +592,9 @@ footer {
     font-weight: 600;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-transform: uppercase; }
+    @media screen and (max-width: 400px) {
+      .summer-page .values-block p, .spring-page .values-block p {
+        font-size: 36px; } }
   .summer-page .values-block p:nth-child(odd), .spring-page .values-block p:nth-child(odd) {
     color: #caef58; }
 
@@ -482,6 +607,9 @@ footer {
     font-weight: 600;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-transform: uppercase; }
+    @media screen and (max-width: 400px) {
+      .fall-page .values-block p {
+        font-size: 36px; } }
   .fall-page .values-block p:nth-child(odd) {
     color: #e6c88a; }
 
@@ -494,6 +622,9 @@ footer {
     font-weight: 600;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-transform: uppercase; }
+    @media screen and (max-width: 400px) {
+      .archive-header p {
+        font-size: 40px; } }
 
 .full-page i {
   width: 25px; }

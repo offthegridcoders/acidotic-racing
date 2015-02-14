@@ -1,12 +1,22 @@
 .left-side {
   .event-block {
     float: right;
+
+    @media screen and (max-width: 800px) {
+      float: none;
+    }
   }
 }
 
 .right-side {
   .event-block {
     left: 0;
+
+    &:first-child {
+      @media screen and (max-width: 800px) {
+        margin-top: 0;
+      }
+    }
   }
 }
 
@@ -17,6 +27,26 @@
   height: 400px;
   position: relative;
   width: 450px;
+  
+  @media screen and (max-width: 950px) {
+    height: 360px;
+    width: 400px;
+  }
+  
+  @media screen and (max-width: 850px) {
+    height: 360px;
+    width: 370px;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 400px;
+    margin: 25px auto;
+    width: 450px;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 95%;
+  }
 
   img {
     left: 0;
@@ -116,6 +146,21 @@
     font-size: 30px;
     margin-bottom: 50px;
     margin-top: 50px;
+
+    @media screen and (max-width: 950px) {
+      margin-top: 0;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+  }
+
+  h3 {
+    @media screen and (max-width: 400px) {
+      font-size: 16px;
+    }
   }
 }
 

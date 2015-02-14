@@ -6,6 +6,10 @@
     a:nth-child(2) {
       display: none;
     }
+
+    @media screen and (max-width: 350px) {
+      padding: 6px;
+    }
   }
 
   li:hover {
@@ -22,5 +26,9 @@
     cursor: pointer;
     opacity: .9;
     width: 70px;
+
+    @media screen and (max-width: 350px) {
+      width: 60px;
+    }
   }
 }

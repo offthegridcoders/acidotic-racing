@@ -3,17 +3,39 @@
   display: inline-block;
   margin: 500px 1% 50px;
   padding: 20px 0;
+  position: relative;
   vertical-align: top;
   width: 47%;
+
+  @media screen and (max-width: 800px) {
+    margin: 430px auto 0;
+    padding: 0;
+    width: 100%;
+  }
 }
 
 .left-side {
   text-align: right;
+
+  @media screen and (max-width: 800px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-top: 500px;
+    text-align: center;
+  }
 }
 
 .right-side {
   padding-top: 20px;
   text-align: left;
+
+  @media screen and (max-width: 800px) {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
 }
 
 .full-page {

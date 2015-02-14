@@ -6,6 +6,10 @@
   text-shadow: 5px 5px 5px #000;
   text-transform: uppercase;
 
+  @media screen and (max-width: 400px) {
+    font-size: 60px;
+  }
+
   span {
     color: #fff;
     display: block;

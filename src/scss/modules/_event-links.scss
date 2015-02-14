@@ -22,6 +22,27 @@
     text-align: left;
     vertical-align: top;
     width: 230px;
+
+    @media screen and (max-width: 1000px) {
+      width: 220px;
+    }
+
+    @media screen and (max-width: 950px) {
+      width: 200px;
+    }
+
+    @media screen and (max-width: 850px) {
+      width: 185px;
+    }
+
+    @media screen and (max-width: 800px) {
+      text-align: center;
+      width: 400px;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 95%;
+    }
   }
 
   li {
@@ -30,14 +51,14 @@
     margin: 8px 5px;
     padding: 5px;
     transition: background-color .3s ease;
-  }
 
-  li:hover {
-    background-color: #000;
-    transition: background-color .3s ease;
+    &:hover {
+      background-color: #000;
+      transition: background-color .3s ease;
 
-    a {
-      color: $orange;
+      a {
+        color: $orange;
+      }
     }
   }
 
@@ -46,5 +67,9 @@
     font-size: 20px;
     margin-bottom: 15px;
     text-transform: uppercase;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 }

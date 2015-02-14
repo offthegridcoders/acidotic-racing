@@ -9,6 +9,10 @@
       font-weight: 600;
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
       text-transform: uppercase;
+
+      @media screen and (max-width: 400px) {
+        font-size: 36px;
+      }
     }
 
     p:nth-child(odd) {
@@ -29,6 +33,10 @@
       font-weight: 600;
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
       text-transform: uppercase;
+
+      @media screen and (max-width: 400px) {
+        font-size: 36px;
+      }
     }
 
     p:nth-child(odd) {
@@ -48,6 +56,10 @@
       font-weight: 600;
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
       text-transform: uppercase;
+
+      @media screen and (max-width: 400px) {
+        font-size: 36px;
+      }
     }
 
     p:nth-child(odd) {
@@ -66,5 +78,9 @@
     font-weight: 600;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-transform: uppercase;
+
+    @media screen and (max-width: 400px) {
+      font-size: 40px;
+    }
   }
 }

@@ -1,12 +1,22 @@
 .left-side {
   .green-box {
     margin-left: 25%;
+    
+    @media screen and (max-width: 800px) {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
   }
 }
 
 .right-side {
   .green-box {
     margin-right: 25%;
+    
+    @media screen and (max-width: 800px) {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
   }
 }
 
