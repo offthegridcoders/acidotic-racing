@@ -857,19 +857,23 @@ footer {
     font-size: 20px;
     margin-bottom: 15px;
     vertical-align: middle;
-    width: 500px; }
+    width: 100%; }
   .full-page .accolades-article p {
     display: inline-block;
     font-size: 16px;
     margin-left: 0;
     vertical-align: middle;
-    width: 500px; }
+    width: 100%; }
   .full-page .accolades-article img {
     float: left;
     margin: 20px 30px 20px 0;
     max-width: 150px;
     vertical-align: middle;
     width: 200px; }
+    @media screen and (max-width: 550px) {
+      .full-page .accolades-article img {
+        float: none;
+        margin: 20px auto; } }
 .full-page .course-map {
   margin-top: 15px;
   max-width: 100%; }
