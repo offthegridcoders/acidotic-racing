@@ -205,3 +205,26 @@
 .results-event {
   background-image: url('../assets/events/event_results.jpg');
 }
+
+.photos-event-joe,
+.photos-event-scott {
+  h2 {
+    color: #fff;
+    margin-top: 50px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 50px;
+    max-width: 240px;
+    position: static;
+  }
+}
+
+.photos-event-joe {
+  background-image: url('../assets/events/event_photos.jpg');
+}
+
+.photos-event-scott {
+  background-image: url('../assets/events/event_photos02.jpg');
+}

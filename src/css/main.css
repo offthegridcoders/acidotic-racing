@@ -298,11 +298,11 @@ footer {
     margin: 8px 5px;
     padding: 5px;
     transition: background-color .3s ease; }
-    .event-links li:hover {
-      background-color: #000;
-      transition: background-color .3s ease; }
-      .event-links li:hover a {
-        color: #fcb034; }
+  .event-links li:hover {
+    background-color: #000;
+    transition: background-color .3s ease; }
+    .event-links li:hover a {
+      color: #fcb034; }
   .event-links .event-season-header {
     font-size: 20px;
     margin-bottom: 15px;
@@ -619,6 +619,21 @@ footer {
 .results-event {
   background-image: url('../assets/events/event_results.jpg'); }
 
+.photos-event-joe h2, .photos-event-scott h2 {
+  color: #fff;
+  margin-top: 50px; }
+.photos-event-joe img, .photos-event-scott img {
+  display: block;
+  margin: 0 auto 50px;
+  max-width: 240px;
+  position: static; }
+
+.photos-event-joe {
+  background-image: url('../assets/events/event_photos.jpg'); }
+
+.photos-event-scott {
+  background-image: url('../assets/events/event_photos02.jpg'); }
+
 .winter-page .values-block {
   margin: 60px 0; }
   .winter-page .values-block p {
@@ -765,12 +780,7 @@ footer {
         width: 100px; } }
   .full-page .race-image i {
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjM4JSIgc3RvcC1jb2xvcj0iIzk5OTk5OSIgc3RvcC1vcGFjaXR5PSIwLjA1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2Q0ZDRkNCIgc3RvcC1vcGFjaXR5PSIwLjciLz4KICAgIDxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZTBlMGUwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iNjQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
-    background: -moz-linear-gradient(-45deg, rgba(153, 153, 153, 0.05) 38%, rgba(212, 212, 212, 0.7) 53%, rgba(224, 224, 224, 0) 56%, rgba(255, 255, 255, 0) 64%);
     background: -webkit-gradient(linear, left top, right bottom, color-stop(38%, rgba(153, 153, 153, 0.05)), color-stop(53%, rgba(212, 212, 212, 0.7)), color-stop(56%, rgba(224, 224, 224, 0)), color-stop(64%, rgba(255, 255, 255, 0)));
-    background: -webkit-linear-gradient(-45deg, rgba(153, 153, 153, 0.05) 38%, rgba(212, 212, 212, 0.7) 53%, rgba(224, 224, 224, 0) 56%, rgba(255, 255, 255, 0) 64%);
-    background: -o-linear-gradient(-45deg, rgba(153, 153, 153, 0.05) 38%, rgba(212, 212, 212, 0.7) 53%, rgba(224, 224, 224, 0) 56%, rgba(255, 255, 255, 0) 64%);
-    background: -ms-linear-gradient(-45deg, rgba(153, 153, 153, 0.05) 38%, rgba(212, 212, 212, 0.7) 53%, rgba(224, 224, 224, 0) 56%, rgba(255, 255, 255, 0) 64%);
-    background: linear-gradient(135deg, rgba(153, 153, 153, 0.05) 38%, rgba(212, 212, 212, 0.7) 53%, rgba(224, 224, 224, 0) 56%, rgba(255, 255, 255, 0) 64%);
     background-color: #fff;
     bottom: 0;
     color: rgba(0, 0, 0, 0.52);
