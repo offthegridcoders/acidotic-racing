@@ -12,9 +12,11 @@
     font-size: 12px;
   }
 
-  a {
-    color: #fff;
-    font-size: 16px;
+  p {
+    a {
+      color: #fff;
+      font-size: 16px;
+    }
   }
 
   ul {
@@ -62,11 +64,14 @@
     }
   }
 
-  li:first-child {
-    color: $orange;
+  .event-season-header {
     font-size: 20px;
     margin-bottom: 15px;
     text-transform: uppercase;
+    
+    a {
+      color: $orange;
+    }
 
     &:hover {
       background-color: transparent;
