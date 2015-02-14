@@ -109,7 +109,7 @@ article {
   padding: 10px; }
   .season-icons-list li a:nth-child(2) {
     display: none; }
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 400px) {
     .season-icons-list li {
       padding: 6px; } }
 .season-icons-list li:hover a:first-child {
@@ -120,7 +120,7 @@ article {
   cursor: pointer;
   opacity: .9;
   width: 70px; }
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 400px) {
     .season-icons-list img {
       width: 60px; } }
 
@@ -155,7 +155,7 @@ nav {
         padding: 5px 15px; }
         nav li:first-child {
           display: none; } }
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 400px) {
       nav li {
         margin-top: 12px;
         padding: 0 7px; } }
