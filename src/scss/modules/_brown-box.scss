@@ -44,7 +44,12 @@
 }
 
 .official-sponsor {
-  margin-left: 40% !important;
+  margin-left: 40%;
+    
+  @media screen and (max-width: 800px) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
   img {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, .42);
@@ -52,6 +57,11 @@
     margin-left: 20px;
     max-height: 90px;
     max-width: 100px;
+    
+    @media screen and (max-width: 400px) {
+      float: none;
+      margin-left: 0;
+    }
   }
 
   p {

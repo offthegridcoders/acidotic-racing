@@ -1,12 +1,22 @@
 .left-side {
   .dark-brown-box {
     margin-left: 20%;
+    
+    @media screen and (max-width: 800px) {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
   }
 }
 
 .right-side {
   .dark-brown-box {
     margin-right: 20%;
+    
+    @media screen and (max-width: 800px) {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
   }
 }
 

@@ -79,8 +79,11 @@ a {
   border-radius: 4px;
   box-shadow: 3px 3px 20px #000;
   margin: 100px auto 50px;
-  padding: 40px 70px;
-  width: 900px; }
+  max-width: 900px;
+  padding: 40px 70px; }
+  @media screen and (max-width: 700px) {
+    .full-page {
+      padding: 20px; } }
 
 article {
   margin: 20px 0; }
@@ -94,7 +97,7 @@ article {
   text-transform: uppercase; }
   @media screen and (max-width: 400px) {
     .main-header {
-      font-size: 60px; } }
+      font-size: 50px; } }
   .main-header span {
     color: #fff;
     display: block;
@@ -103,6 +106,9 @@ article {
     font-weight: 100;
     line-height: 0;
     text-transform: lowercase; }
+    @media screen and (max-width: 400px) {
+      .main-header span {
+        font-size: 50px; } }
 
 .season-icons-list li {
   display: inline-block;
@@ -385,13 +391,21 @@ footer {
     color: #fcb034; }
 
 .official-sponsor {
-  margin-left: 40% !important; }
+  margin-left: 40%; }
+  @media screen and (max-width: 800px) {
+    .official-sponsor {
+      margin-left: 5%;
+      margin-right: 5%; } }
   .official-sponsor img {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.42);
     float: right;
     margin-left: 20px;
     max-height: 90px;
     max-width: 100px; }
+    @media screen and (max-width: 400px) {
+      .official-sponsor img {
+        float: none;
+        margin-left: 0; } }
   .official-sponsor p {
     color: #4d3815; }
     .official-sponsor p span {
@@ -407,9 +421,17 @@ footer {
 
 .left-side .dark-brown-box {
   margin-left: 20%; }
+  @media screen and (max-width: 800px) {
+    .left-side .dark-brown-box {
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 .right-side .dark-brown-box {
   margin-right: 20%; }
+  @media screen and (max-width: 800px) {
+    .right-side .dark-brown-box {
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 .dark-brown-box {
   background-image: url('../assets/tiles/dark-brown-box.jpg');
@@ -626,8 +648,19 @@ footer {
       .archive-header p {
         font-size: 40px; } }
 
+.fa-reply-all {
+  display: none; }
+
+@media screen and (max-width: 550px) {
+  .full-page {
+    text-align: center; } }
 .full-page i {
   width: 25px; }
+  @media screen and (max-width: 550px) {
+    .full-page i {
+      display: block;
+      margin: 0 auto;
+      width: 25px; } }
 .full-page h4 {
   font-size: 20px;
   margin-bottom: 10px;
@@ -637,15 +670,24 @@ footer {
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize; }
+  @media screen and (max-width: 550px) {
+    .full-page h5 {
+      margin-bottom: 7px; } }
 .full-page p {
   font-size: 14px;
   font-weight: 200;
   margin-bottom: 15px;
   margin-left: 29px; }
+  @media screen and (max-width: 550px) {
+    .full-page p {
+      margin-left: 0; } }
 .full-page .no-extra-padding {
   margin-left: 0; }
 .full-page .logo {
   text-align: right; }
+  @media screen and (max-width: 550px) {
+    .full-page .logo {
+      text-align: center; } }
   .full-page .logo img {
     margin: 10px;
     width: 100px; }
@@ -654,9 +696,12 @@ footer {
   padding: 0 0 10px;
   position: relative; }
   .full-page .header h1 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 200;
     text-transform: uppercase; }
+    @media screen and (max-width: 650px) {
+      .full-page .header h1 {
+        font-size: 22px; } }
   .full-page .header h2 {
     font-size: 19px;
     font-weight: 200;
@@ -675,10 +720,22 @@ footer {
   overflow: hidden;
   position: relative;
   vertical-align: top;
-  width: 450px; }
+  width: 436px; }
+  @media screen and (max-width: 800px) {
+    .full-page .race-image {
+      width: 330px; } }
+  @media screen and (max-width: 700px) {
+    .full-page .race-image {
+      width: 100%; } }
+  @media screen and (max-width: 550px) {
+    .full-page .race-image {
+      text-align: left; } }
   .full-page .race-image img {
     margin: 10px;
     width: 130px; }
+    @media screen and (max-width: 550px) {
+      .full-page .race-image img {
+        width: 100px; } }
   .full-page .race-image i {
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjM4JSIgc3RvcC1jb2xvcj0iIzk5OTk5OSIgc3RvcC1vcGFjaXR5PSIwLjA1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2Q0ZDRkNCIgc3RvcC1vcGFjaXR5PSIwLjciLz4KICAgIDxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZTBlMGUwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iNjQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
     background: -moz-linear-gradient(-45deg, rgba(153, 153, 153, 0.05) 38%, rgba(212, 212, 212, 0.7) 53%, rgba(224, 224, 224, 0) 56%, rgba(255, 255, 255, 0) 64%);
@@ -705,6 +762,15 @@ footer {
   display: inline-block;
   margin-left: 20px;
   width: 200px; }
+  @media screen and (max-width: 700px) {
+    .full-page .race-details {
+      margin-bottom: 15px;
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%; } }
+  @media screen and (max-width: 550px) {
+    .full-page .race-details p {
+      margin-bottom: 25px; } }
 .full-page .button-wrapper img {
   cursor: pointer;
   margin-left: 10px;
@@ -719,6 +785,9 @@ footer {
 .full-page .button-wrapper i {
   padding-top: 4px;
   vertical-align: middle; }
+  @media screen and (max-width: 550px) {
+    .full-page .button-wrapper i {
+      display: none; } }
 .full-page .frm-email-notification {
   border-bottom: solid 1px #000;
   margin-top: 20px;
@@ -731,6 +800,12 @@ footer {
     height: 35px;
     padding-left: 10px;
     width: 250px; }
+    @media screen and (max-width: 550px) {
+      .full-page .frm-email-notification input {
+        width: 200px; } }
+    @media screen and (max-width: 500px) {
+      .full-page .frm-email-notification input {
+        margin: 10px auto; } }
   .full-page .frm-email-notification button {
     background: transparent;
     border: solid 1px #fcb034;
@@ -788,6 +863,9 @@ footer {
   margin-left: 10px;
   margin-top: 5px;
   padding: 5px; }
+  @media screen and (max-width: 800px) {
+    .current-results i {
+      display: none; } }
 
 .past-results summary {
   color: #fff;
@@ -807,3 +885,6 @@ footer {
   margin-right: 10px;
   margin-top: 6px;
   padding: 5px; }
+  @media screen and (max-width: 800px) {
+    .past-results i {
+      display: none; } }
