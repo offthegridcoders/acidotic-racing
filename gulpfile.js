@@ -20,28 +20,24 @@ var paths = {
   distHTML: 'dist/**/*.html'
 };
 
+gulp.task('default', ['build', 'clean-up'], function() {});
+
 // Makes Distribution folder with all files minified
-gulp.task('default', ['sass', 'clean', 'useref', 'img-min'], function() {
-  gulp.src(paths.distHTML)
+gulp.task('build', ['sass', 'clean', 'useref', 'img-min'], function() {
+  return gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
-  gulp.src([
-    'src/css/defaults',
-    'src/css/layout/',
-    'src/css/modules/',
-    'dist/partials/'], {read: false})
-    .pipe(clean());
 });
 
 gulp.task('sass', ['lint'], function () {
-  gulp.src(paths.scss)
+  return gulp.src(paths.scss)
     .pipe(sass())
     .pipe(gulp.dest('./src/css'));
 });
 
 gulp.task('useref', ['fileinclude'], function () {
   var assets = useref.assets();
-  gulp.src(paths.html)
+  return gulp.src(paths.html)
     .pipe(assets)
     .pipe(gulpif('**/*.js', uglify()))
     .pipe(gulpif('**/*.css', minifyCSS()))
@@ -61,13 +57,13 @@ gulp.task('img-min', ['clean'], function () {
 });
 
 gulp.task('img-copy', ['clean'], function() {
-  gulp.src(paths.assets)
+  return gulp.src(paths.assets)
   // Perform minification tasks, etc here
   .pipe(gulp.dest('./dist/assets'));
 })
 
 gulp.task('lint', function() {
-  gulp.src(paths.scss)
+  return gulp.src(paths.scss)
     .pipe(scsslint());
 });
 
@@ -76,9 +72,17 @@ gulp.task('clean', ['sass'], function () {
     .pipe(clean());
 });
 
+gulp.task('clean-up', ['build'], function() {
+  return gulp.src([
+    'src/css/defaults',
+    'src/css/layout/',
+    'src/css/modules/',
+    'dist/partials/'], {read: false})
+    .pipe(clean());
+});
+
 gulp.task('fileinclude', ['clean'], function() {
   return gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
 });
-
