@@ -32,7 +32,6 @@ gulp.task('default', ['sass', 'build', 'clean-up'], function() {
     ], ['default']);
 });
 
-
 // compiles scss then minifies and uglifies all css files
 // including vendor files and scss files
 
