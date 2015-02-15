@@ -2,7 +2,7 @@
 
 ## Part of Off The Grid Coders
 
-You can see the progress here: [LINK](http://thewickedwebdev.github.io/acidotic-racing/dist/)
+You can see the progress here: [LINK](http://offthegridcoders.github.io/acidotic-racing/dist/)
 
 Generated Static HTML using Gulp
 
