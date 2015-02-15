@@ -9,18 +9,20 @@ var gulpif = require('gulp-if');
 var fileinclude = require('gulp-file-include');
 var watch = require('gulp-watch');
 var autoprefixer = require('gulp-autoprefixer');
+var concatCss = require('gulp-concat-css');
 
 var paths = {
-  scss: 'src/scss/**/*',
+  scss: 'src/scss/**/*.scss',
   assets: 'src/assets/**/*',
-  css: 'src/css/**/*.css',
+  vendor: 'src/scss/vendor/*.css',
+  css: 'src/css/*.css',
   html: 'src/**/*.html',
   js: 'src/js/**/*.js',
   templates: 'src/templates/_*.html',
   distHTML: 'dist/**/*.html'
 };
 
-gulp.task('default', ['build', 'clean-up'], function() {
+gulp.task('default', ['sass', 'build', 'clean-up'], function() {
   return gulp.watch([
       paths.scss,
       paths.assets,
@@ -30,56 +32,66 @@ gulp.task('default', ['build', 'clean-up'], function() {
     ], ['default']);
 });
 
-// Makes Distribution folder with all files minified
-gulp.task('build', ['sass', 'clear', 'useref', 'img-copy'], function() {
-  return gulp.src(paths.distHTML)
+
+// compiles scss then minifies and uglifies all css files
+// including vendor files and scss files
+
+  gulp.task('sass', ['minify-css']);
+
+  gulp.task('compile-sass', function() {
+    return gulp.src(paths.scss)
+      .pipe(scsslint())
+      .pipe(sass())
+      .pipe(gulp.dest('./src/scss'));
+  });
+
+  gulp.task('concat-css', ['compile-sass'], function () {
+    return gulp.src(['./src/scss/*.css', paths.vendor])
+      .pipe(concatCss('main.css'))
+      .pipe(gulp.dest('./src/css'));
+  });
+
+  gulp.task('minify-css', ['concat-css'], function() {
+    return gulp.src('./src/css/main.css')
+      .pipe(minifyCSS())
+      .pipe(gulp.dest('./src/css'))
+  });
+
+// builds complete site and exports into
+// dist folder then runs cleanup
+
+  gulp.task('build', ['clear', 'useref', 'img-copy'], function() {
+    return gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
-});
+  });
 
-gulp.task('clear', ['sass'], function () {
-  return gulp.src('dist', {read: false})
-    .pipe(clean());
-});
+  gulp.task('clear', ['sass'], function () {
+    return gulp.src('dist', {read: false})
+      .pipe(clean());
+  });
 
-gulp.task('sass', ['lint'], function () {
-  return gulp.src(paths.scss)
-    .pipe(sass())
-    .pipe(gulp.dest('./src/css'));
-});
+  gulp.task('useref', ['fileinclude'], function () {
+    var assets = useref.assets();
+    return gulp.src(paths.html)
+      .pipe(assets)
+      .pipe(assets.restore())
+      .pipe(useref())
+      .pipe(gulp.dest('./dist'));
+  });
 
-gulp.task('lint', function() {
-  return gulp.src(paths.scss)
-    .pipe(scsslint());
-});
+  gulp.task('fileinclude', ['clear'], function() {
+    return gulp.src(paths.distHTML)
+      .pipe(fileinclude())
+      .pipe(gulp.dest('./dist'));
+  });
+  
+  gulp.task('img-copy', ['clear'], function() {
+    return gulp.src(paths.assets)
+    .pipe(gulp.dest('./dist/assets'));
+  })
 
-gulp.task('useref', ['fileinclude'], function () {
-  var assets = useref.assets();
-  return gulp.src(paths.html)
-    .pipe(assets)
-    .pipe(gulpif('**/*.js', uglify()))
-    .pipe(gulpif('**/*.css', minifyCSS()))
-    .pipe(assets.restore())
-    .pipe(useref())
-    .pipe(gulp.dest('./dist'));
-});
-
-gulp.task('fileinclude', ['clear'], function() {
-  return gulp.src(paths.distHTML)
-    .pipe(fileinclude())
-    .pipe(gulp.dest('./dist'));
-});
-
-gulp.task('img-copy', ['clear'], function() {
-  return gulp.src(paths.assets)
-  .pipe(gulp.dest('./dist/assets'));
-})
-
-gulp.task('clean-up', ['build'], function() {
-  return gulp.src([
-    'src/css/defaults',
-    'src/css/layout/',
-    'src/css/modules/',
-    'dist/partials/'], {read: false})
-    .pipe(clean())
-});
+  gulp.task('clean-up', ['build'], function() {
+    return gulp.src(['./dist/partials/'], {read: false})
+      .pipe(clean())
+  });
