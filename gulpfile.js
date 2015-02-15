@@ -10,6 +10,8 @@ var fileinclude = require('gulp-file-include');
 var watch = require('gulp-watch');
 var autoprefixer = require('gulp-autoprefixer');
 var concatCss = require('gulp-concat-css');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 var paths = {
   scss: 'src/scss/**/*.scss',
@@ -22,7 +24,7 @@ var paths = {
   distHTML: 'dist/**/*.html'
 };
 
-gulp.task('default', ['sass', 'build', 'clean-up'], function() {
+gulp.task('default', ['sass', 'make', 'clean-up'], function() {
   return gulp.watch([
       paths.scss,
       paths.assets,
@@ -31,6 +33,8 @@ gulp.task('default', ['sass', 'build', 'clean-up'], function() {
       paths.templates
     ], ['default']);
 });
+
+gulp.task('build', ['sass', 'make', 'clean-up', 'image-compress'], function() {});
 
 // compiles scss then minifies and uglifies all css files
 // including vendor files and scss files
@@ -59,7 +63,7 @@ gulp.task('default', ['sass', 'build', 'clean-up'], function() {
 // builds complete site and exports into
 // dist folder then runs cleanup
 
-  gulp.task('build', ['clear', 'useref', 'img-copy'], function() {
+  gulp.task('make', ['clear', 'useref', 'img-copy'], function() {
     return gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
@@ -90,7 +94,18 @@ gulp.task('default', ['sass', 'build', 'clean-up'], function() {
     .pipe(gulp.dest('./dist/assets'));
   })
 
-  gulp.task('clean-up', ['build'], function() {
+  gulp.task('clean-up', ['make'], function() {
     return gulp.src(['./dist/partials/'], {read: false})
       .pipe(clean())
   });
+
+  gulp.task('image-compress', ['clean-up'], function () {
+    return gulp.src('./dist/assets/**/*.*')
+      .pipe(imagemin({
+          optimizationLevel: 1,
+          progressive: true,
+          use: [pngquant()]
+      }))
+      .pipe(gulp.dest('./dist/assets/'));
+  });
+
