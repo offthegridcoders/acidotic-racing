@@ -6,9 +6,9 @@ var uglify = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
 var useref = require('gulp-useref');
 var gulpif = require('gulp-if');
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
 var fileinclude = require('gulp-file-include');
+var watch = require('gulp-watch');
+var autoprefixer = require('gulp-autoprefixer');
 
 var paths = {
   scss: 'src/scss/**/*',
@@ -20,19 +20,37 @@ var paths = {
   distHTML: 'dist/**/*.html'
 };
 
-gulp.task('default', ['build', 'clean-up'], function() {});
+gulp.task('default', ['build', 'clean-up'], function() {
+  return gulp.watch([
+      paths.scss,
+      paths.assets,
+      paths.html,
+      paths.js,
+      paths.templates
+    ], ['default']);
+});
 
 // Makes Distribution folder with all files minified
-gulp.task('build', ['sass', 'clear', 'useref', 'img-min'], function() {
+gulp.task('build', ['sass', 'clear', 'useref', 'img-copy'], function() {
   return gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('clear', ['sass'], function () {
+  return gulp.src('dist', {read: false})
+    .pipe(clean());
 });
 
 gulp.task('sass', ['lint'], function () {
   return gulp.src(paths.scss)
     .pipe(sass())
     .pipe(gulp.dest('./src/css'));
+});
+
+gulp.task('lint', function() {
+  return gulp.src(paths.scss)
+    .pipe(scsslint());
 });
 
 gulp.task('useref', ['fileinclude'], function () {
@@ -46,31 +64,16 @@ gulp.task('useref', ['fileinclude'], function () {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('img-min', ['clear'], function () {
-  return gulp.src(paths.assets)
-    .pipe(imagemin({
-        progressive: true,
-        svgoPlugins: [{removeViewBox: false}],
-        use: [pngquant()]
-    }))
-    .pipe(gulp.dest('./dist/assets'));
+gulp.task('fileinclude', ['clear'], function() {
+  return gulp.src(paths.distHTML)
+    .pipe(fileinclude())
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('img-copy', ['clear'], function() {
   return gulp.src(paths.assets)
-  // Perform minification tasks, etc here
   .pipe(gulp.dest('./dist/assets'));
 })
-
-gulp.task('lint', function() {
-  return gulp.src(paths.scss)
-    .pipe(scsslint());
-});
-
-gulp.task('clear', ['sass'], function () {
-  return gulp.src('dist', {read: false})
-    .pipe(clean());
-});
 
 gulp.task('clean-up', ['build'], function() {
   return gulp.src([
@@ -78,11 +81,5 @@ gulp.task('clean-up', ['build'], function() {
     'src/css/layout/',
     'src/css/modules/',
     'dist/partials/'], {read: false})
-    .pipe(clean());
-});
-
-gulp.task('fileinclude', ['clear'], function() {
-  return gulp.src(paths.distHTML)
-    .pipe(fileinclude())
-    .pipe(gulp.dest('./dist'));
+    .pipe(clean())
 });
