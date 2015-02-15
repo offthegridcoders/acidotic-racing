@@ -102,9 +102,9 @@ gulp.task('build', ['sass', 'make', 'clean-up', 'image-compress'], function() {}
   gulp.task('image-compress', ['clean-up'], function () {
     return gulp.src('./dist/assets/**/*.*')
       .pipe(imagemin({
-          optimizationLevel: 1,
-          progressive: true,
-          use: [pngquant()]
+        progressive: true,
+        svgoPlugins: [{removeViewBox: false}],
+        use: [pngquant()]
       }))
       .pipe(gulp.dest('./dist/assets/'));
   });
