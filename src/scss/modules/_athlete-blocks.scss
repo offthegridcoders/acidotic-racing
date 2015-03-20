@@ -30,6 +30,7 @@
   height: 200px;
   max-width: 49%;
   width: 200px;
+
   &:hover {
     .athlete-info {
       opacity: 1;
@@ -39,7 +40,7 @@
 }
 
 .athlete-info {
-  background-color: rgba(0, 0, 0, 0.69);
+  background-color: rgba(0, 0, 0, .69);
   height: 100%;
   opacity: 0;
   text-align: center;
