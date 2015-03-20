@@ -20,7 +20,6 @@ var paths = {
   css: 'src/css/*.css',
   html: 'src/**/*.html',
   js: 'src/js/**/*.js',
-  templates: 'src/templates/_*.html',
   distHTML: 'dist/**/*.html'
 };
 
@@ -29,8 +28,7 @@ gulp.task('default', ['sass', 'make', 'clean-up'], function() {
       paths.scss,
       paths.assets,
       paths.html,
-      paths.js,
-      paths.templates
+      paths.js
     ], ['default']);
 });
 
@@ -63,7 +61,7 @@ gulp.task('build', ['sass', 'make', 'clean-up', 'image-compress'], function() {}
 // builds complete site and exports into
 // dist folder then runs cleanup
 
-  gulp.task('make', ['clear', 'useref', 'img-copy'], function() {
+  gulp.task('make', ['clear', 'useref', 'img-copy', 'compress'], function() {
     return gulp.src(paths.distHTML)
     .pipe(fileinclude())
     .pipe(gulp.dest('./dist'));
@@ -93,6 +91,12 @@ gulp.task('build', ['sass', 'make', 'clean-up', 'image-compress'], function() {}
     return gulp.src(paths.assets)
     .pipe(gulp.dest('./dist/assets'));
   })
+
+  gulp.task('compress', ['useref'], function() {
+    return gulp.src('./dist/js/scripts.js')
+      .pipe(uglify())
+      .pipe(gulp.dest('./dist/js/'))
+  });
 
   gulp.task('clean-up', ['make'], function() {
     return gulp.src(['./dist/partials/'], {read: false})
