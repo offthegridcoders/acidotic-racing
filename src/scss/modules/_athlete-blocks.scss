@@ -1,0 +1,56 @@
+.left-side {
+  .athlete-block {
+    float: right;
+    margin-left: 40px;
+
+    @media screen and (max-width: 800px) {
+      float: none;
+    }
+  }
+}
+
+.right-side {
+  .athlete-block {
+    left: 0;
+    margin-right: 40px;
+
+    &:first-child {
+      @media screen and (max-width: 800px) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.athlete-block {
+  background-position: 50%;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 200px;
+  max-width: 49%;
+  width: 200px;
+  &:hover {
+    .athlete-info {
+      opacity: 1;
+      transition: opacity .5s ease;
+    }
+  }
+}
+
+.athlete-info {
+  background-color: rgba(0, 0, 0, 0.69);
+  height: 100%;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  
+  p {
+    color: $orange;
+    padding-top: 70px;
+  }
+
+  span {
+    color: #fff;
+  }
+}

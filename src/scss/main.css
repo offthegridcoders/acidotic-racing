@@ -224,11 +224,11 @@ header {
     .results-header {
       background-image: url('../assets/headers/results-header-sm.png'); } }
 
-.photos-header {
+.about-header {
   background-image: url('../assets/headers/photos-header.png');
   background-position: 100%; }
   @media screen and (max-width: 500px) {
-    .photos-header {
+    .about-header {
       background-image: url('../assets/headers/photos-header-sm.png'); } }
 
 .why-header {
@@ -915,3 +915,41 @@ footer {
   @media screen and (max-width: 800px) {
     .past-results i {
       display: none; } }
+
+.left-side .athlete-block {
+  float: right;
+  margin-left: 40px; }
+  @media screen and (max-width: 800px) {
+    .left-side .athlete-block {
+      float: none; } }
+
+.right-side .athlete-block {
+  left: 0;
+  margin-right: 40px; }
+  @media screen and (max-width: 800px) {
+    .right-side .athlete-block:first-child {
+      margin-top: 0; } }
+
+.athlete-block {
+  background-position: 50%;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 200px;
+  max-width: 49%;
+  width: 200px; }
+  .athlete-block:hover .athlete-info {
+    opacity: 1;
+    transition: opacity .5s ease; }
+
+.athlete-info {
+  background-color: rgba(0, 0, 0, 0.69);
+  height: 100%;
+  opacity: 0;
+  text-align: center;
+  width: 100%; }
+  .athlete-info p {
+    color: #fcb034;
+    padding-top: 70px; }
+  .athlete-info span {
+    color: #fff; }
