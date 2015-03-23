@@ -877,45 +877,6 @@ footer {
 .winter-advisory h5, .winter-advisory p {
   color: #f00; }
 
-.current-results li {
-  margin-bottom: 30px; }
-.current-results .title {
-  color: #fff;
-  font-size: 18px; }
-.current-results i {
-  background-color: #2a200f;
-  color: #fcb034;
-  float: right;
-  font-size: 23px;
-  margin-left: 10px;
-  margin-top: 5px;
-  padding: 5px; }
-  @media screen and (max-width: 800px) {
-    .current-results i {
-      display: none; } }
-
-.past-results summary {
-  color: #fff;
-  cursor: pointer;
-  font-size: 20px;
-  margin-bottom: 10px;
-  outline: none; }
-.past-results li {
-  margin-bottom: 20px; }
-.past-results .title {
-  color: #fff; }
-.past-results i {
-  background-color: #252525;
-  color: #ccc;
-  float: left;
-  font-size: 18px;
-  margin-right: 10px;
-  margin-top: 6px;
-  padding: 5px; }
-  @media screen and (max-width: 800px) {
-    .past-results i {
-      display: none; } }
-
 .left-side .athlete-block {
   float: right;
   margin-left: 40px; }
