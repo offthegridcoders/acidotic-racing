@@ -892,8 +892,9 @@ footer {
       margin-top: 0; } }
 
 .athlete-block {
-  background-position: 50%;
-  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   cursor: pointer;
   display: inline-block;
   height: 200px;
