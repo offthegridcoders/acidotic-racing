@@ -33,6 +33,7 @@ a {
 
 .winter-page, .spring-page, .summer-page, .fall-page {
   background-position: 0 0;
+  background-size: 40%;
   transition: background-position .15s ease; }
 
 .winter-page {
