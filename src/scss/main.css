@@ -915,3 +915,7 @@ footer {
     padding-top: 70px; }
   .athlete-info span {
     color: #fff; }
+
+.addthis-toolbox {
+  float: right;
+  margin-top: 8px; }
