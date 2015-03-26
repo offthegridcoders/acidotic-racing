@@ -4,6 +4,7 @@
 
 html,
 body {
+  background-attachment:fixed;
   font-family: $primary-font;
   margin: 0;
   max-width: 100%;
@@ -47,6 +48,14 @@ a {
   font-size: 0;
   height: 0;
   visibility: hidden;
+}
+
+.winter-page,
+.spring-page,
+.summer-page,
+.fall-page {
+  background-position: 0 0;
+  transition: background-position .15s ease;
 }
 
 .winter-page {

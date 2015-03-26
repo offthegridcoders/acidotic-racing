@@ -6,8 +6,9 @@ function checkHeaderPosition() {
 
 function parallax(){
   var scrollPosition = $(window).scrollTop();
-  var speed = -1.3;
+  var speed = -2;
   var newTopPosition = scrollPosition * speed;
+
   if ($(window).scrollTop() > 0) {
     $('header').css('top', newTopPosition + 'px');
   }
