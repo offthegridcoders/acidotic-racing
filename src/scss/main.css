@@ -66,9 +66,13 @@ a {
   @media screen and (max-width: 800px) {
     .left-side {
       text-align: center; } }
-  @media screen and (max-width: 500px) {
+  @media screen and (min-width: 401px) and (max-width: 500px) {
     .left-side {
-      margin-top: 500px;
+      margin-top: 400px;
+      text-align: center; } }
+  @media screen and (max-width: 400px) {
+    .left-side {
+      margin-top: 350px;
       text-align: center; } }
 
 .right-side {
@@ -980,15 +984,13 @@ footer {
   .contact-form input[type='submit'] {
     background-color: rgba(84, 110, 32, 0.33);
     border: 2px solid #badf77;
+    color: #ddebc1;
     margin-top: 10px;
     padding: 10px;
     text-transform: uppercase;
     transition: background-color .3s ease;
     transition: border .3s ease;
-    width: 100px;
-    color: #ddebc1; }
+    width: 100px; }
     .contact-form input[type='submit']:hover {
       background-color: rgba(84, 110, 32, 0.83);
-      border-color: transparent;
-      transition: background-color .3s ease;
-      transition: border-color .3s ease; }
+      border-color: transparent; }
