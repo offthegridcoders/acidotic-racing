@@ -164,9 +164,7 @@ nav {
         padding: 10px 20px; } }
     @media screen and (max-width: 500px) {
       nav li {
-        padding: 5px 15px; }
-        nav li:first-child {
-          display: none; } }
+        padding: 5px 15px; } }
     @media screen and (max-width: 400px) {
       nav li {
         margin-top: 12px;
