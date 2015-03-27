@@ -148,40 +148,75 @@ nav {
   z-index: 9000; }
   nav:hover {
     transition: background .4s ease; }
-  nav ul {
+  nav .main-nav {
     margin: 10px auto 0;
     max-width: 100%;
     text-align: center; }
-  nav li {
-    border-right: solid 1px #fff;
-    display: inline-block;
-    padding: 15px 30px;
-    text-transform: uppercase; }
-    nav li:last-child {
-      border: 0; }
-    @media screen and (max-width: 700px) {
-      nav li {
-        padding: 10px 20px; } }
-    @media screen and (max-width: 500px) {
-      nav li {
-        padding: 5px 15px; } }
-    @media screen and (max-width: 400px) {
-      nav li {
-        margin-top: 12px;
-        padding: 0 7px; } }
-  nav a {
-    color: #fff;
-    font-size: 15px; }
-    nav a:hover {
+    nav .main-nav li {
+      border-right: solid 1px #fff;
+      display: inline-block;
+      padding: 15px 30px;
+      text-transform: uppercase; }
+      nav .main-nav li:last-child {
+        border: 0; }
+      @media screen and (max-width: 700px) {
+        nav .main-nav li {
+          padding: 10px 20px; } }
+      @media screen and (max-width: 500px) {
+        nav .main-nav li {
+          padding: 5px 15px; } }
+      @media screen and (max-width: 400px) {
+        nav .main-nav li {
+          margin-top: 12px;
+          padding: 0 7px; } }
+    nav .main-nav a {
+      color: #fff;
+      font-size: 15px; }
+      nav .main-nav a:hover {
+        color: #fcb034; }
+      @media screen and (max-width: 600px) {
+        nav .main-nav a {
+          font-size: 13px; } }
+      @media screen and (max-width: 550px) {
+        nav .main-nav a {
+          font-size: 12px; } }
+    nav .main-nav span {
+      text-transform: lowercase; }
+  nav .seasons-nav {
+    background-color: rgba(0, 0, 0, 0.41);
+    display: none;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 70px; }
+    nav .seasons-nav li {
+      padding: 10px 20px; }
+      nav .seasons-nav li:hover {
+        background-color: rgba(0, 0, 0, 0.58); }
+        nav .seasons-nav li:hover img:first-child {
+          display: none; }
+        nav .seasons-nav li:hover img:nth-child(2) {
+          display: inline-block; }
+      nav .seasons-nav li img:nth-child(2) {
+        display: none; }
+    nav .seasons-nav a {
+      color: rgba(255, 255, 255, 0.63); }
+      nav .seasons-nav a:hover {
+        color: #fcb034; }
+    nav .seasons-nav img {
+      margin-right: 8px;
+      vertical-align: middle;
+      width: 25px; }
+    nav .seasons-nav .active {
+      background-color: rgba(0, 0, 0, 0.58);
       color: #fcb034; }
-    @media screen and (max-width: 600px) {
-      nav a {
-        font-size: 13px; } }
-    @media screen and (max-width: 550px) {
-      nav a {
-        font-size: 12px; } }
-  nav span {
-    text-transform: lowercase; }
+  nav .season-icon {
+    cursor: pointer;
+    float: right;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    z-index: +1; }
 
 header {
   background-position: 50% 100%;
