@@ -7,7 +7,12 @@
     <section class="left-side wow animated fadeInLeftBig">
       <h1 class="main-header">CONTACT<span>acidotic</span></h1>
       <article class="green-box">
-        <form action="https://docs.google.com/forms/d/1741gb8kvbPaISKPRRkIUa66gzW26hE0qtTz5Q23JMYs/formResponse" method="POST" id="ss-form" target="_self" class="contact-form">
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe"
+          style="display:none;" onload="if(submitted)
+          {window.location='http://www.acidoticracing.com';}"></iframe>
+        <form action="https://docs.google.com/forms/d/1741gb8kvbPaISKPRRkIUa66gzW26hE0qtTz5Q23JMYs/formResponse" method="post"
+          target="hidden_iframe" onsubmit="submitted=true;" class="contact-form">
           <p>Please feel free to contact us at with any questions you may have at <a href="mailto:contact@acidoticRACING.com">contact@acidoticRACING.com</a> or fill out the form below. We will be sure to respond in a timely manner. Thank you for contacting us!</p>
           
           <label class="ss-q-item-label" for="entry_784818601">What is your name?</label>
