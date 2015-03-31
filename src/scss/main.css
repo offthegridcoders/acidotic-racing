@@ -223,7 +223,7 @@ nav {
     z-index: +1; }
 
 header {
-  background-position: 50% 100%;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -269,7 +269,7 @@ header {
 
 .about-header {
   background-image: url('../assets/headers/photos-header.png');
-  background-position: 100%; }
+  background-position: 0 80%; }
   @media screen and (max-width: 500px) {
     .about-header {
       background-image: url('../assets/headers/photos-header-sm.png'); } }
