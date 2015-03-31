@@ -43,7 +43,8 @@ a {
   background-image: url('../assets/tiles/grass.jpg'); }
 
 .summer-page {
-  background-image: url('../assets/tiles/body_wallpaper_sand.jpg'); }
+  background-image: url('../assets/tiles/body_wallpaper_sand.jpg');
+  background-size: 200px; }
 
 .fall-page {
   background-image: url('../assets/tiles/body_wallpaper.jpg'); }
