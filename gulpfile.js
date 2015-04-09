@@ -68,7 +68,7 @@ gulp.task('build', ['sass', 'make', 'clean-up', 'image-compress'], function() {}
   });
 
   gulp.task('clear', ['sass'], function () {
-    return gulp.src('dist', {read: false})
+    return gulp.src('dist/**/*.*', {read: false})
       .pipe(clean());
   });
 

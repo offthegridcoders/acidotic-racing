@@ -10,7 +10,7 @@
     "gulp-minify-css": "^0.3.13",
     "gulp-notify": "^2.1.0",
     "gulp-rename": "^1.2.0",
-    "gulp-sass": "*",
+    "gulp-sass": "^1.3.3",
     "gulp-scss-lint": "*",
     "gulp-uglify": "^1.1.0",
     "gulp-useref": "^1.1.1",
